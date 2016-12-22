@@ -1,0 +1,404 @@
+@import "modules";
+@import "fonts";
+header {
+    text-align: center;
+    background: url(../img/34.png) repeat;
+    height: 220px;
+    margin: -60px -100px -30px -100px;
+    border-bottom: 2px solid #eeeeee;
+}
+
+.name {
+    text-align: center;
+    font-family: bebasneue;
+    padding-top: 100px;
+    h1 {
+        font-weight: bold;
+        margin: 0px 0 0 0;
+        padding: 10px 0 0 0;
+        color: white;
+        text-shadow: 1px 1px 1px black;
+        animation-duration: 1.5s;
+        animation-name: bounce;
+        animation-timing-function: ease-out;
+    }
+    .lines {
+        display: inline-block;
+        border-top: 2px solid #FFC600;
+        border-bottom: 2px solid #FFC600;
+        height: 5px;
+        width: 60px;
+        animation: lines 2s forwards rewarse;
+        position: relative;
+    }
+}
+
+.resume {
+    color: black;
+    text-shadow: 1px 1px 1px white;
+    position: relative;
+    b {
+        position: absolute;
+    }
+}
+
+.t {
+    animation: t 1.2s ease-out forwards;
+}
+
+.h {
+    animation: h 1.5s ease-out forwards;
+}
+
+.e {
+    animation: e 1.3s ease-out forwards;
+}
+
+.r {
+    animation: r 1.6s ease-out forwards;
+}
+
+.e2 {
+    animation: e2 1.4s ease-out forwards;
+}
+
+.s {
+    animation: s 1.7s ease-out forwards;
+}
+
+.u {
+    animation: u 1.5s ease-out forwards;
+}
+
+.m {
+    animation: m 1.8s ease-out forwards;
+}
+
+.e3 {
+    animation: e3 1.6s ease-out forwards;
+}
+
+//start the resume animation
+@keyframes t {
+    100% {
+        transform: rotate(-70deg) translate(-4px, -36px);
+    }
+}
+
+@keyframes h {
+    100% {
+        transform: rotate(-50deg) translate(-8px, -35px);
+    }
+}
+
+@keyframes e {
+    100% {
+        transform: rotate(-35deg) translate(-7px, -32px);
+    }
+}
+
+@keyframes r {
+    100% {
+        transform: rotate(-15deg) translate(-5px, -30px);
+        /*left: -35px;
+    top: -10px;*/
+    }
+}
+
+@keyframes e2 {
+    100% {
+        transform: rotate(-5deg) translate(0px, -29px);
+    }
+}
+
+@keyframes s {
+    100% {
+        transform: rotate(15deg) translate(0px, -29px);
+    }
+}
+
+@keyframes u {
+    100% {
+        transform: rotate(25deg) translate(5px, -30px);
+    }
+}
+
+@keyframes m {
+    100% {
+        transform: rotate(50deg) translate(2px, -31px);
+    }
+}
+
+@keyframes e3 {
+    100% {
+        transform: rotate(70deg) translate(2px, -33px);
+    }
+}
+
+@keyframes resume {
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+//start title animation
+@keyframes bounce {
+    from, 60%, 75%, 90%, to {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -3000px, 0);
+    }
+    60% {
+        opacity: 1;
+        transform: translate3d(0, 25px, 0);
+    }
+    75% {
+        transform: translate3d(0, -10px, 0);
+    }
+    90% {
+        transform: translate3d(0, 5px, 0);
+    }
+    to {
+        transform: none;
+    }
+}
+
+//end anim
+h3 {
+    display: block;
+    float: left;
+    font-size: 15px;
+    margin: 20px 0 0 35px;
+    padding: 0px;
+    font-family: lato;
+    font-weight: 900;
+    letter-spacing: 5px;
+    span:first-child {
+        margin: 0 0px 0 0;
+        text-shadow: 1px 1px 1px black;
+        color: #fff;
+    }
+    span:last-child {
+        background: #FFC600;
+        margin: 0 0 0 0;
+        padding: 20px 40px 35px 0;
+        color: black;
+        text-shadow: 1px 1px 1px white;
+    }
+}
+
+.about-me {
+    display: inline-block;
+    float: left;
+}
+
+.info-me {
+    border-bottom: 2px solid #eeeeee;
+    box-sizing: border-box;
+    padding: 30px 0 40px 0;
+    margin: 30px 0 30px 0;
+}
+
+.left-col {
+    display: inline-block;
+    width: 50%;
+    border-right: 2px solid #eeeeee;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    float: left;
+}
+
+.title {
+    height: 100px;
+}
+
+.contact {
+    background-color: #FFC600;
+    font-size: 12px;
+    float: right;
+    color: #454141;
+    font-weight: bold;
+    padding: 5px 10px 13px 50px;
+    margin: 0 30px 0 0;
+    text-align: right;
+    font-family: lato;
+    b:first-child {
+        padding: 0 20px 0 0px;
+        font-size: 14px;
+        font-family: lato;
+    }
+}
+
+.about-text {
+    display: inline-block;
+    padding: 10px 0 0 10px;
+    p {
+        font-family: aleks;
+        padding: 0px 30px 0 70px;
+        color: white;
+    }
+}
+
+.right-col {
+    display: inline-block;
+    width: 49%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//slider
+.wrap-carousel {
+    width: 500px;
+    margin: 15px 50px 0px 80px;
+}
+
+.carousel-indicators {
+    margin-bottom: -10px;
+}
+
+.left-arr {
+    height: 45px;
+    width: 45px;
+    margin: 60% 10px 0 0;
+}
+
+.right-arr {
+    height: 45px;
+    width: 45px;
+    margin: 60% 0 0 10px;
+}
+
+.education {
+    margin: 20px 0px 0px 50px;
+    color: white;
+    font-size: 13px;
+    &>div {
+        text-align: left;
+        float: left;
+        box-sizing: border-box;
+        hr {
+            width: 60px;
+            margin: 0 0 0 20px;
+            padding: 0;
+        }
+        p {
+            margin: 10px 50px 5px 10px;
+        }
+        p:first-child {
+            font-family: aleks;
+            b {
+                font-family: aleks;
+            }
+        }
+        p:last-child {
+            font-family: aleks;
+        }
+    }
+    img {
+        height: 130px;
+        width: 160px;
+        margin: -10px 0px 10px 0px;
+        padding: 5px;
+    }
+}
+
+.experience {
+    margin: 20px 0 0 0;
+    border-bottom: 2px solid #eeeeee;
+    height: 580px;
+}
+
+.exp-title {
+    width: 50%;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+.exp-cont {
+    margin: 0 25px 0 80px;
+    font-family: aleks;
+    color: white;
+}
+
+.work-info {
+    text-align: right;
+    text-shadow: 1px 1px 1px black;
+    p {
+        margin: 0px;
+        padding: 0;
+    }
+}
+
+.dizaap {
+    h4 {
+        padding: 10px 0 0 0px;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px black;
+    }
+}
+
+.goantifroud {
+    h4 {
+        padding: 0 0 0px 0px;
+        font-weight: bold;
+        width: 150px;
+        float: left;
+    }
+    .work-info {
+        margin-bottom: 20px;
+    }
+}
+
+.respons {
+    li {
+        padding-left: 20px;
+        list-style-type: none;
+    }
+    li:before {
+        content: "➤";
+        color: #FFC600;
+        padding-right: 20px;
+        /* Добавляем в качестве маркера символ */
+    }
+}
+
+.skills-title {
+    float: left;
+}
+
+.skills {
+    margin: 0px 0 0px 210px;
+    li {
+        height: 20px;
+        width: 270px;
+        border: 1px solid #FFC600;
+        list-style-type: none;
+        margin-bottom: 10px;
+        div {
+            font-family: aleks;
+            height: 100%;
+            width: 0;
+            background: #FFC600;
+            padding-left: 35px;
+            color: #454141;
+            transition: width 5s;
+            font-weight: bold;
+        }
+    }
+}
+
+.sepor {
+    width: 250px;
+    text-align: right;
+    margin: 5px 5px 5px auto;
+}
+
+.wrap-exp {
+    padding-bottom: 40px;
+}

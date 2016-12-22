@@ -1,0 +1,78 @@
+/*Глобальные стили*/
+
+body {
+    // background
+    background-color: grey;
+    background-image: -webkit-linear-gradient(263deg, rgba(255, 255, 255, 0.2) 0%, #000000 100%), -webkit-linear-gradient(18deg, rgba(255, 255, 255, 0.25) 25%, rgba(0, 0, 0, 0.25) 100%), -webkit-radial-gradient(47% 102%, rgba(255, 255, 255, 0.5) 0%, rgba(21, 24, 32, 0.6) 120%);
+    background-image: linear-gradient(-173deg, rgba(255, 255, 255, 0.2) 0%, #000000 100%), linear-gradient(72deg, rgba(255, 255, 255, 0.25) 25%, rgba(0, 0, 0, 0.25) 100%), radial-gradient(47% 102%, rgba(255, 255, 255, 0.5) 0%, rgba(21, 24, 32, 0.6) 120%);
+    background-blend-mode: multiply;
+    // end background
+    margin: 20px 100px 20px 100px;
+    padding: 0;
+    height: 100%;
+    font-family: bebasneue lato fontawesome aq aleks;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, :before, :after {
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit
+}
+
+
+/* вставка для imput, для заполнения пустых полей */
+
+body input:focus:required:invalid, body textarea:focus:required:invalid {}
+
+body input:required:invalid, body textarea:required:invalid {}
+
+
+/* отмена выделения */
+
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+
+/* для отмены выделения */
+
+.img_info {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+
+/*для IE*/
+
+header, nav, section, article, aside, footer {
+    display: block
+}
+
+
+/* чтоб анимация загружалась равномерно 
+после загрузки страницы */
+
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+}
+
+.preload * {
+    -webkit-transition: all 0s linear;
+    -moz-transition: all 0s linear;
+    -ms-transition: all 0s linear;
+    -o-transition: all 0s linear;
+}
+
+
+/* ПОЕХАЛИ */
