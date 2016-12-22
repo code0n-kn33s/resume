@@ -366,7 +366,7 @@ h3 {
     color: black;
     text-shadow: 1px 1px 1px white; }
 
-.about-me {
+.title {
   display: inline-block;
   float: left; }
 
@@ -387,8 +387,16 @@ h3 {
           box-sizing: border-box;
   float: left; }
 
-.title {
-  height: 100px; }
+.git-hub {
+  display: inline-block;
+  height: 75px;
+  width: 200px;
+  background: #FFC600;
+  margin: 0 0px 0 150px;
+  padding: 0;
+  font-size: 15px;
+  font-family: lato;
+  padding: 25px 0 0 20px; }
 
 .contact {
   background-color: #FFC600;
@@ -402,7 +410,7 @@ h3 {
   font-family: lato; }
   .contact b:first-child {
     padding: 0 20px 0 0px;
-    font-size: 14px;
+    font-size: 15px;
     font-family: lato; }
 
 .about-text {
@@ -462,19 +470,13 @@ h3 {
   .education img {
     height: 130px;
     width: 160px;
-    margin: -10px 0px 10px 0px;
+    margin: -10px 0px 10px -10px;
     padding: 5px; }
 
 .experience {
   margin: 20px 0 0 0;
   border-bottom: 2px solid #eeeeee;
   height: 580px; }
-
-.exp-title {
-  width: 50%;
-  float: left;
-  padding: 0;
-  margin: 0; }
 
 .exp-cont {
   margin: 0 25px 0 80px;
@@ -511,9 +513,6 @@ h3 {
   color: #FFC600;
   padding-right: 20px;
   /* Добавляем в качестве маркера символ */ }
-
-.skills-title {
-  float: left; }
 
 .skills {
   margin: 0px 0 0px 210px; }
