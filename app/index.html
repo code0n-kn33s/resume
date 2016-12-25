@@ -6,13 +6,12 @@
     <title>Document</title>
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="css/libs.min.css">
-    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <header class="preload">
-        <div class="name">
+        <div id="top" class="name">
             <span class="resume">
                 <b class="t">t</b>
                 <b class="h">h</b>
@@ -25,197 +24,259 @@
                 <b class="m">m</b>
                 <b class="e3">e</b>
             </span>
-            <h1>Bashinskiy Alex</h1>
-            <div class="lines"></div>
+            <h1><span class="yaku">Bashinskiy Alex</span></h1>
+            <div class="lines">Front-end
+            </div>
+            <div class="tel">+ 3 8 0 9 3 0 1 5 1 9 1 9</div>
         </div>
     </header>
+    <nav id="menu" class="menu menu--horatio">
+        <ul class="menu__list">
+            <li class="menu__item"><a href="#top" class="menu__link">Title</a></li>
+            <li class="menu__item"><a href="#skills" class="menu__link">Skills</a></li>
+            <li class="menu__item"><a href="#aboutme" class="menu__link">About me</a></li>
+            <li class="menu__item"><a href="#contact" class="menu__link">Contact</a></li>
+        </ul>
+    </nav>
     <div class="wrap-info">
-        <div class="info-me">
+        <div class="wrap-columns">
             <div class="left-col">
-                <div class="about-contact">
-                    <div class="title">
-                        <h3><span>ABO</span><span>UT ME</span></h3>
+                <div class="wrap-experience">
+                    <div class="experience">
+                        <div class="title">
+                            <div class="cl-effect-2 hidden-xs hidden-sm">
+                                EXP
+                                <span data-hover="ERIENCE">ERIENCE</span>
+                            </div>
+                        </div>
+                        <div class="exp-cont ">
+                            <div class="outsourcing ">
+                                <div class="work-info ">
+                                    <p><b>Front-end</b>
+                                        <br> 09.2015 - this time</p>
+                                    <hr class="out-sepor">
+                                    <p><b>OUTSOURCING</b>
+                                        <br>
+                                        <a href="http://dizaap.com/">http://dizaap.com/ru/</a>
+                                        <br>
+                                        <a href="https://insta.tools/">https://insta.tools/</a>
+                                    </p>
+                                </div>
+                                <ul class="respons">
+                                    <li>Участвовал в большом проэкте Victora Gavro - Insta-tools</li>
+                                    <li>Помогал делать сайт для компании http://dizaap.com/</li>
+                                    <li>Работал с тикетами, помогал с версткой, переделывал чужой код;</li>
+                                    <li>Применял ng- "c коробки" angular 1.6;</li>
+                                    <li>Вёрстка по PSD макетам и с Layout. SEO-дружественный код;</li>
+                                    <li>CSS, jquery анимация;</li>
+                                    <li>Оптимизация, компиляция, конкатенация и минимализация рабочего кода;</li>
+                                    <li>Пишу акуратный крос-браузерный, pixel-perfect, адаптивный код под размеры разных устройств;</li>
+                                    <li>Photoshop: аккуратная нарезка макетов, применение спрайтов, пиксельхантинг;</li>
+                                </ul>
+                            </div>
+                            <hr>
+                            <div class="dizaap">
+                                <h4>RESPONSIBILITY</h4>
+                                <div class="work-info">
+                                    <p><b class="12">System administrator</b>
+                                        <br> 07.2015 - this time</p>
+                                    <hr class="sepor hidden-xs hidden-sm">
+                                    <p><b>DIZAAP ©</b>
+                                        <br><a href="http://dizaap.com/ru/ ">http://dizaap.com/ru/</a></p>
+                                </div>
+                                <ul class="respons">
+                                    <li>Обслуживал 2 офиса 30 PC;</li>
+                                    <li>Администрирование Windows XP/7/8/10, macOS, linux;</li>
+                                    <li>Настройка сетевого оборудования, VPN, Wi-Fi, UniFi, (принтеров, МФУ);</li>
+                                    <li>Установка, настройка, обновление програм;</li>
+                                    <li>Решение проблем удаленно;</li>
+                                    <li>Коммутация патч-панели, обжимка патч-кордов RJ45, IP-телефония;</li>
+                                    <li>Установка, настройка windows, linux;</li>
+                                    <li>Опыт работы (TP-link, Cisco) локальных сетей, LAN Ethernet(OSI);</li>
+                                </ul>
+                            </div>
+                            <hr>
+                            <div class="goantifroud">
+                                <h4>RESPONSIBILITY</h4>
+                                <div class="work-info">
+                                    <p><b>Technical support</b>
+                                        <br> 02.2014 - 07.2015</p>
+                                    <hr class="sepor hidden-xs hidden-sm">
+                                    <p><b>GOANTIFRAUD ©</b>
+                                        <br><a href="https://goantifraud.com/ru">https://goantifraud.com/ru</a></p>
+                                </div>
+                                <ul class="respons">
+                                    <li>Концультировал людей по принципах работы VoIP-телефонии (SIP, H.323, TLS, SRTP)</li>
+                                    <li>Администрировал программно-аппаратную платформы компании</li>
+                                    <li>Техническая поддержка клиентов, обучение клиентов техническим особенностям работы с программным обеспечением</li>
+                                    <li>Участие в разработке, отчетность, оперативное решение проблем, мониторинг</li>
+                                    <li>Тестирование, обработка обращений и постановка задач в баг-трекере</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-col">
+                <div class="wrap-slider-education">
+                    <div class="title hidden-xs hidden-sm hidden-md">
+                        <div class="cl-effect-2 hidden-xs hidden-sm">
+                            EDU
+                            <span data-hover="CATION">CATION</span>
+                        </div>
+                    </div>
+                    <div class="hidden-xs hidden-sm hidden-md git-hub"><span>You can see this code on </span><b>GitHub:</b>
+                        <br><a href="https://github.com/nagana12/resume.git"><b>https://github.com/resume.git</b></a>
+                    </div>
+                    <div class="wrap-carousel hidden-xs hidden-sm hidden-md">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0 " class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1 "></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                            </ol>
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <div class="education ">
+                                        <div class="education-cont">
+                                            <p>National University of the
+                                                <br> &nbsp;&nbsp;State Tax Service of Ukraine
+                                                <br>&nbsp;&nbsp;&nbsp;<b> 2004-2009</b> </p>
+                                            <hr>
+                                            <p>Control &amp; revision </p>
+                                        </div>
+                                        <img src="img/universe.jpg" alt="universe">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="education ">
+                                        <div>
+                                            <p>
+                                                International Institute
+                                                <br> &nbsp;&nbsp;of Fundamental Psychology
+                                                <br> &nbsp;&nbsp;&nbsp;
+                                                <b>2012-2014</b> </p>
+                                            <hr>
+                                            <p>Psychoanalysis</p>
+                                        </div>
+                                        <img src="img/note.jpg" alt="universe">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="education ">
+                                        <div>
+                                            <p>National University of the
+                                                <br> &nbsp;&nbsp;State Tax Service of Ukraine
+                                                <br>
+                                                <b>&nbsp;&nbsp;&nbsp;2004-2009</b> </p>
+                                            <hr>
+                                            <p>Control &amp; revision</p>
+                                        </div>
+                                        <img src="img/22.jpg" alt="universe">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Left and right controls -->
+                            <a class="left" href="#myCarousel" data-slide="prev">
+                                <img class="left-arr" src="img/left.png" alt="prev">
+                            </a>
+                            <a id="skills" class="right" href="#myCarousel" data-slide="next">
+                                <img class="right-arr" src="img/right.png" alt="next">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-skills">
+                    <div class="title skills-title hidden-xs hidden-sm hidden-md">
+                        <div class="cl-effect-2 hidden-xs hidden-sm">
+                            SKIL
+                            <span data-hover="LS">LS</span>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <ul>
+                            <li>
+                                <div class="item1" id="item1">HTML5</div>
+                            </li>
+                            <li>
+                                <div class="item2" id="item2">CSS3</div>
+                            </li>
+                            <li>
+                                <div class="item3" id="item3">JAVASCRIPT</div>
+                            </li>
+                            <li>
+                                <div class="item4" id="item4">PHOTOSHOP</div>
+                            </li>
+                            <li>
+                                <div class="item5" id="item5">SASS/SCSS</div>
+                            </li>
+                            <li>
+                                <div class="item6" id="item6">BOOTSTRAP</div>
+                            </li>
+                            <li>
+                                <div class="item7" id="item7">FLEX</div>
+                            </li>
+                            <li>
+                                <div class="item8" id="item8">GIT/NPM/BOWER</div>
+                            </li>
+                            <li>
+                                <div class="item9" id="item9">GULP</div>
+                            </li>
+                            <li>
+                                <div class="item10" id="item10">BASH/CMD</div>
+                            </li>
+                            <li>
+                                <div class="item11" id="item11">JQUERY</div>
+                            </li>
+                            <li>
+                                <div class="item12" id="item12">SQL</div>
+                            </li>
+                            <li>
+                                <div class="item13" id="item13">TOUCH_TYPE</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="wrap-aboutme">
+                    <div class="about-me">
+                        <div class="title hidden-xs hidden-sm hidden-md">
+                            <div id="aboutme" class="cl-effect-2 hidden-xs hidden-sm">
+                                ABO
+                                <span data-hover="UT ME">UT ME</span>
+                            </div>
+                        </div>
+                        <div class="about-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis provident a beatae ad non at rerum, deserunt atque laboriosam quidem, sunt, aliquam nisi odit repellendus animi earum consequuntur maxime. Delectus.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas iusto consequatur voluptatibus quo, consectetur odio cupiditate ipsam ducimus perspiciatis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-contact">
+                    <div class="title hidden-xs hidden-sm hidden-md">
+                        <div id="contact" class="cl-effect-2 hidden-xs hidden-sm">
+                            CON
+                            <span data-hover="TACT">TACT</span>
+                        </div>
                     </div>
                     <div class="contact">
-                        <b>+38 (093) 015 19 19</b>
-                        <br> <b>mail: </b><a href="https://mail.ru/">alexquery@mail.ru</a>
-                        <br><b>skype: </b>alexquery
-                    </div>
-                </div>
-                <div class="about-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis provident a beatae ad non at rerum, deserunt atque laboriosam quidem, sunt, aliquam nisi odit repellendus animi earum consequuntur maxime. Delectus.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas iusto consequatur voluptatibus quo, consectetur odio cupiditate ipsam ducimus perspiciatis officiis hic ipsa, quis, numquam natus harum commodi ea maxime quos.</p>
-                </div>
-            </div>
-            <div class="right-col">
-                <div class="title">
-                    <h3><span>EDU</span><span>CATION</span></h3>
-                </div>
-                <div class="git-hub"><span><b>GitHub:</b></span>
-                    <a href=""></a>
-                </div>
-                <div class="wrap-carousel">
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#myCarousel" data-slide-to="1"></li>
-                            <li data-target="#myCarousel" data-slide-to="2"></li>
-                        </ol>
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner" role="listbox">
-                            <div class="item active">
-                                <div class="education">
-                                    <div>
-                                        <p>National University of the
-                                            <br> &nbsp;&nbsp;State Tax Service of Ukraine
-                                            <br>&nbsp;&nbsp;&nbsp;<b> 2004-2009</b> </p>
-                                        <hr>
-                                        <p>Control &amp; revision </p>
-                                    </div>
-                                    <img src="img/universe.jpg" alt="universe">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="education">
-                                    <div>
-                                        <p>
-                                            International Institute of
-                                            <br> &nbsp;&nbsp;Fundamental Psychology
-                                            <br> &nbsp;&nbsp;&nbsp;
-                                            <b>2012-2014</b> </p>
-                                        <hr>
-                                        <p>Psychoanalysis</p>
-                                    </div>
-                                    <img src="img/book.jpg" alt="universe">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="education">
-                                    <div>
-                                        <p>National University of the
-                                            <br> &nbsp;&nbsp;State Tax Service of Ukraine
-                                            <br>
-                                            <b>&nbsp;&nbsp;&nbsp;2004-2009</b> </p>
-                                        <hr>
-                                        <p>Control &amp; revision</p>
-                                    </div>
-                                    <img src="img/note.jpg" alt="universe">
-                                </div>
-                            </div>
+                        <div class="contact-info">
                         </div>
-                        <!-- Left and right controls -->
-                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                            <img class="left-arr" src="img/left.png" alt="prev">
-                        </a>
-                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                            <img class="right-arr" src="img/right.png" alt="next">
-                        </a>
+                        <div class="contact-info">
+                        </div>
+                        <div class="contact-info">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="wrap-exp">
-        <div class="experience">
-            <div class="left-col">
-                <div class="title">
-                    <h3><span>EXP</span><span>ERIENCE</span></h3>
-                </div>
-                <div class="exp-cont">
-                    <div class="dizaap">
-                        <div class="work-info">
-                            <p><b>DIZAAP company</b>
-                                <br>website: <a href="http://dizaap.com/ru/">http://dizaap.com/ru/</a> </p>
-                            <hr class="sepor">
-                            <p><b>System administrator</b>
-                                <br> 07.2015 - this time</p>
-                        </div>
-                        <h4>RESPONSIBILITY</h4>
-                        <ul class="respons">
-                            <li>Обеспечивал техническую поддержку двух оффисов</li>
-                            <li>Поднимал с нуля сеть wifi</li>
-                            <li>Обжимал патч панель, патч-корды</li>
-                            <li>Разводил кабеля под принтеры, ip-телефонию и камеры</li>
-                            <li>Настраивал сервер</li>
-                            <li>Пробрасывал порты в маршрутизаторе</li>
-                            <li>Работал с оборудованием cisco, tp-link</li>
-                            <li>Оплачивал телефонию и интернет</li>
-                            <li>Подбирал, ремонтировал и апгрейдил технику</li>
-                        </ul>
-                        <hr>
-                    </div>
-                    <div class="goantifroud">
-                        <div class="work-info">
-                            <h4>RESPONSIBILITY</h4>
-                            <p><b>GOANTIFRAUD company</b>
-                                <br>website: <a href="https://goantifraud.com/ru">https://goantifraud.com/ru</a></p>
-                            <hr class="sepor">
-                            <p><b>Technical support</b>
-                                <br> 02.2014 - 07.2015</p>
-                        </div>
-                        <ul class="respons">
-                            <li>Я консультировал людей по технической части продукта</li>
-                            <li>Тестировал программу на баги</li>
-                            <li>Удаленно разбирался в проблемных ситуациях</li>
-                            <li>Составлял баг-репорты</li>
-                            <li>Работал с програмой Jira</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="right-col">
-                <div class="title skills-title">
-                    <h3><span>SKIL</span><span>LS</span></h3>
-                </div>
-                <div class="skills">
-                    <ul>
-                        <li>
-                            <div class="item1" id="item1">HTML5</div>
-                        </li>
-                        <li>
-                            <div class="item2" id="item2">CSS3</div>
-                        </li>
-                        <li>
-                            <div class="item3" id="item3">JAVASCRIPT</div>
-                        </li>
-                        <li>
-                            <div class="item4" id="item4">PHOTOSHOP</div>
-                        </li>
-                        <li>
-                            <div class="item5" id="item5">SASS/SCSS</div>
-                        </li>
-                        <li>
-                            <div class="item6" id="item6">BOOTSTRAP</div>
-                        </li>
-                        <li>
-                            <div class="item7" id="item7">FLEX</div>
-                        </li>
-                        <li>
-                            <div class="item8" id="item8">GIT/NPM/BOWER</div>
-                        </li>
-                        <li>
-                            <div class="item9" id="item9">GULP</div>
-                        </li>
-                        <li>
-                            <div class="item10" id="item10">BASH/CMD</div>
-                        </li>
-                        <li>
-                            <div class="item11" id="item11">JQUERY</div>
-                        </li>
-                        <li>
-                            <div class="item12" id="item12">SQL</div>
-                        </li>
-                        <li>
-                            <div class="item13" id="item13">TOUCH_TYPE</div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="js/libs.min.js"></script>
+    <footer>
+    </footer>
     <script src="js/common.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
 </body>
 
 </html>

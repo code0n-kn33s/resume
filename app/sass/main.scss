@@ -1,35 +1,65 @@
 @import "modules";
 @import "fonts";
+$orange: #FFC600;
+$blue: #006C90;
 header {
     text-align: center;
-    background: url(../img/34.png) repeat;
-    height: 220px;
+    background: url(../img/head.png) repeat;
+    height: 180px;
     margin: -60px -100px -30px -100px;
     border-bottom: 2px solid #eeeeee;
+}
+
+a {
+    color: #006C90 !important;
+    text-shadow: none !important;
+    font-weight: 800;
 }
 
 .name {
     text-align: center;
     font-family: bebasneue;
-    padding-top: 100px;
+    padding-top: 75px;
     h1 {
         font-weight: bold;
         margin: 0px 0 0 0;
-        padding: 10px 0 0 0;
-        color: white;
-        text-shadow: 1px 1px 1px black;
+        padding: 5px 0 0 0;
+        color: black;
+        text-shadow: 1px 1px 1px white;
         animation-duration: 1.5s;
         animation-name: bounce;
         animation-timing-function: ease-out;
     }
-    .lines {
-        display: inline-block;
-        border-top: 2px solid #FFC600;
-        border-bottom: 2px solid #FFC600;
-        height: 5px;
-        width: 60px;
-        animation: lines 2s forwards rewarse;
-        position: relative;
+}
+
+.lines {
+    display: inline-block;
+    border-top: 2px solid $orange;
+    border-bottom: 2px solid $orange;
+    width: 110px;
+    position: relative;
+    height: 25px;
+    font-weight: bold;
+    font-size: 16px;
+    background: #e3e3e3;
+    z-index: 10;
+}
+
+.tel {
+    z-index: 11;
+    margin-top: -25px;
+    font-weight: bold;
+    font-size: 17px;
+    animation: tel 2s ease-out forwards;
+}
+
+.tel:hover {
+    font-size: 22px;
+}
+
+@keyframes tel {
+    100% {
+        transform: translate(0, 25px)
     }
 }
 
@@ -42,6 +72,7 @@ header {
     }
 }
 
+//start the resume animation
 .t {
     animation: t 1.2s ease-out forwards;
 }
@@ -78,7 +109,6 @@ header {
     animation: e3 1.6s ease-out forwards;
 }
 
-//start the resume animation
 @keyframes t {
     100% {
         transform: rotate(-70deg) translate(-4px, -36px);
@@ -100,8 +130,6 @@ header {
 @keyframes r {
     100% {
         transform: rotate(-15deg) translate(-5px, -30px);
-        /*left: -35px;
-    top: -10px;*/
     }
 }
 
@@ -166,27 +194,26 @@ header {
     }
 }
 
-//end anim
-h3 {
-    display: block;
-    float: left;
+//end title animation 
+//orange blocks
+.cl-effect-2 {
+    position: relative;
+    display: inline-block;
     font-size: 15px;
-    margin: 20px 0 0 35px;
-    padding: 0px;
+    margin: 0px 0 0 35px;
     font-family: lato;
     font-weight: 900;
-    letter-spacing: 5px;
-    span:first-child {
-        margin: 0 0px 0 0;
-        text-shadow: 1px 1px 1px black;
-        color: #fff;
-    }
-    span:last-child {
-        background: #FFC600;
-        margin: 0 0 0 0;
-        padding: 20px 40px 35px 0;
-        color: black;
-        text-shadow: 1px 1px 1px white;
+    span {
+        position: relative;
+        display: inline-block;
+        height: 70px;
+        width: 120px;
+        color: white;
+        padding: 0 0px 0px 0;
+        margin: 0 0px 0 -2px;
+        text-transform: uppercase;
+        line-height: 50px;
+        letter-spacing: 1.6px;
     }
 }
 
@@ -195,96 +222,97 @@ h3 {
     float: left;
 }
 
-.info-me {
-    border-bottom: 2px solid #eeeeee;
+//COLUMNS
+.wrap-columns {
     box-sizing: border-box;
-    padding: 30px 0 40px 0;
-    margin: 30px 0 30px 0;
+    padding: 20px 0 15px 0;
+    margin: 30px 0 10px 0;
 }
 
 .left-col {
     display: inline-block;
     width: 50%;
-    border-right: 2px solid #eeeeee;
-    margin: 0;
+    border-right: 1px solid #eeeeee;
+    margin: 0px 0 0 0;
     padding: 0;
     box-sizing: border-box;
     float: left;
 }
 
-.git-hub {
-    display: inline-block;
-    height: 75px;
-    width: 200px;
-    background: #FFC600;
-    margin: 0 0px 0 150px;
-    padding: 0;
-    font-size: 15px;
-    font-family: lato;
-    padding: 25px 0 0 20px;
-}
-
-.contact {
-    background-color: #FFC600;
-    font-size: 12px;
-    float: right;
-    color: #454141;
-    font-weight: bold;
-    padding: 5px 10px 13px 50px;
-    margin: 0 30px 0 0;
-    text-align: right;
-    font-family: lato;
-    b:first-child {
-        padding: 0 20px 0 0px;
-        font-size: 15px;
-        font-family: lato;
-    }
-}
-
-.about-text {
-    display: inline-block;
-    padding: 10px 0 0 10px;
-    p {
-        font-family: aleks;
-        padding: 0px 30px 0 70px;
-        color: white;
-    }
-}
-
 .right-col {
     display: inline-block;
-    width: 49%;
-    margin: 0;
+    width: 50%;
+    margin: 0px 0 0 0;
     padding: 0;
     box-sizing: border-box;
+    float: right;
 }
 
-//slider
-.wrap-carousel {
-    width: 500px;
-    margin: 15px 50px 0px 80px;
+//EXPERIENCE
+.work-info {
+    text-align: right;
+    text-shadow: 1px 1px 1px white;
+    p {
+        margin: 0 30px 0 0px;
+        padding: 0 0 0 0px;
+    }
 }
 
-.carousel-indicators {
-    margin-bottom: -10px;
+.exp-cont {
+    margin: 0 0px 0 36px;
+    font-family: aq;
 }
 
-.left-arr {
-    height: 45px;
-    width: 45px;
-    margin: 60% 10px 0 0;
+.outsourcing {
+    h4 {
+        margin: -20px 0 10px 0;
+        padding: 0px 0 0 0px;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px white;
+    }
 }
 
-.right-arr {
-    height: 45px;
-    width: 45px;
-    margin: 60% 0 0 10px;
+.goantifroud, .dizaap {
+    h4 {
+        padding: 25px 0 10px 0px;
+        font-weight: bold;
+        width: 150px;
+        float: left;
+    }
 }
 
+.respons {
+    li {
+        text-align: justify;
+        padding: 0 50px 0 30px;
+        list-style-type: none;
+        font-size: 15px;
+        font-family: aq;
+    }
+    li:before {
+        content: "➤";
+        color: $orange;
+        padding-right: 20px;
+        /* Добавляем в качестве маркера символ */
+    }
+}
+
+.sepor {
+    width: 250px;
+    text-align: right;
+    margin: 5px 5px 5px auto;
+}
+
+.out-sepor {
+    margin: 0 0 0px auto;
+    width: 250px;
+}
+
+//SLIDER & EDUCATION
 .education {
     margin: 20px 0px 0px 50px;
-    color: white;
     font-size: 13px;
+    float: left;
     &>div {
         text-align: left;
         float: left;
@@ -295,93 +323,86 @@ h3 {
             padding: 0;
         }
         p {
-            margin: 10px 50px 5px 10px;
-        }
-        p:first-child {
-            font-family: aleks;
-            b {
-                font-family: aleks;
-            }
-        }
-        p:last-child {
-            font-family: aleks;
+            margin: 5px 50px 5px 10px;
+            font-family: aq;
+            font-size: 15px;
         }
     }
     img {
         height: 130px;
         width: 160px;
-        margin: -10px 0px 10px -10px;
+        margin: -10px 20px 10px -30px;
         padding: 5px;
     }
 }
 
-.experience {
-    margin: 20px 0 0 0;
-    border-bottom: 2px solid #eeeeee;
-    height: 580px;
-}
-
-.exp-cont {
-    margin: 0 25px 0 80px;
+.git-hub {
+    display: inline-block;
+    height: 70px;
+    border-top: 1px solid $blue;
+    border-bottom: 1px solid $blue;
+    padding: 10px;
+    font-size: 14px;
     font-family: aleks;
-    color: white;
-}
-
-.work-info {
-    text-align: right;
-    text-shadow: 1px 1px 1px black;
-    p {
-        margin: 0px;
-        padding: 0;
+    margin-left: 13%;
+    color: $blue;
+    span {
+        font-size: 13px;
+        color: black;
     }
 }
 
-.dizaap {
-    h4 {
-        padding: 10px 0 0 0px;
-        font-weight: bold;
-        text-shadow: 1px 1px 1px black;
-    }
+//slider
+.wrap-carousel {
+    margin: 15px 0px 0px 68px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 0 0 0 0px;
+    width: 480px;
+    height: 150px;
 }
 
-.goantifroud {
-    h4 {
-        padding: 0 0 0px 0px;
-        font-weight: bold;
-        width: 150px;
-        float: left;
-    }
-    .work-info {
-        margin-bottom: 20px;
-    }
+.carousel-indicators {
+    top: 80%;
 }
 
-.respons {
-    li {
-        padding-left: 20px;
-        list-style-type: none;
-    }
-    li:before {
-        content: "➤";
-        color: #FFC600;
-        padding-right: 20px;
-        /* Добавляем в качестве маркера символ */
-    }
+.left-arr {
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    left: -5%;
+    top: 32%;
+}
+
+.right-arr {
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    right: -5%;
+    top: 32%;
+}
+
+//SKILLS
+.wrap-skills {
+    display: inline-block;
+    border-bottom: 1px solid white;
+    box-sizing: border-box;
+    margin-top: 20px;
 }
 
 .skills {
-    margin: 0px 0 0px 210px;
+    margin: 0px 0 20px 210px;
     li {
         height: 20px;
-        width: 270px;
-        border: 1px solid #FFC600;
+        width: 338px;
+        border: 1px solid $orange;
         list-style-type: none;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         div {
             font-family: aleks;
             height: 100%;
             width: 0;
-            background: #FFC600;
+            background: $orange;
             padding-left: 35px;
             color: #454141;
             transition: width 5s;
@@ -390,12 +411,41 @@ h3 {
     }
 }
 
-.sepor {
-    width: 250px;
-    text-align: right;
-    margin: 5px 5px 5px auto;
+//ABOUT ME
+.wrap-aboutme {
+    margin: 20px 0 0 0;
+    border-bottom: 1px solid white;
 }
 
-.wrap-exp {
-    padding-bottom: 40px;
+.about-text {
+    display: inline-block;
+    padding: 10px 0 0 10px;
+    p {
+        font-family: aleks;
+        padding: 0px 30px 0 70px;
+    }
+}
+
+//CONTACT
+.wrap-contact {
+    padding: 20px 0 20px 0;
+}
+
+.contact {
+    height: 300px;
+    padding: 20px 0 20px 0;
+}
+
+.contact-info {
+    display: inline-block;
+    background-color: $orange;
+    width: 150px;
+    font-size: 12px;
+    float: right;
+    color: #454141;
+    font-weight: bold;
+    padding: 5px 10px 13px 50px;
+    margin: 0 30px 0 0;
+    text-align: right;
+    font-family: lato;
 }

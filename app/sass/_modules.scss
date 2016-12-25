@@ -1,20 +1,5 @@
 /*Глобальные стили*/
 
-body {
-    // background
-    background-color: grey;
-    background-image: -webkit-linear-gradient(263deg, rgba(255, 255, 255, 0.2) 0%, #000000 100%), -webkit-linear-gradient(18deg, rgba(255, 255, 255, 0.25) 25%, rgba(0, 0, 0, 0.25) 100%), -webkit-radial-gradient(47% 102%, rgba(255, 255, 255, 0.5) 0%, rgba(21, 24, 32, 0.6) 120%);
-    background-image: linear-gradient(-173deg, rgba(255, 255, 255, 0.2) 0%, #000000 100%), linear-gradient(72deg, rgba(255, 255, 255, 0.25) 25%, rgba(0, 0, 0, 0.25) 100%), radial-gradient(47% 102%, rgba(255, 255, 255, 0.5) 0%, rgba(21, 24, 32, 0.6) 120%);
-    background-blend-mode: multiply;
-    // end background
-    margin: 20px 100px 20px 100px;
-    padding: 0;
-    height: 100%;
-    font-family: bebasneue lato fontawesome aq aleks;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
 *, :before, :after {
     box-sizing: border-box;
     -webkit-user-select: none;
@@ -23,6 +8,19 @@ body {
     padding: 0;
     border: 0;
     font: inherit
+}
+
+body {
+    // background
+    background-image: -webkit-linear-gradient(top, #EBEBEB 0%, #DCDDDF 48%, #C4C5C7 99%);
+    background-image: linear-gradient(-180deg, #EBEBEB 0%, #DCDDDF 48%, #C4C5C7 99%);
+    // end background
+    margin: 20px 100px 20px 100px;
+    padding: 0;
+    height: 100%;
+    font-family: bebasneue lato fontawesome aq aleks;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 
@@ -76,3 +74,190 @@ header, nav, section, article, aside, footer {
 
 
 /* ПОЕХАЛИ */
+
+// nav styles
+nav {
+    position: fixed;
+    left: 10px;
+    top: 24%;
+}
+
+.menu__list {
+    padding: 0;
+    list-style: none;
+}
+
+.menu__link {
+    display: block;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.menu__link:hover, .menu__link:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+//styles nav animation
+.menu--horatio .menu__item {
+    margin-left: 2px;
+    margin-right: 2px;
+    color: #4e3c3e;
+    font-family: aleks;
+}
+
+.menu--horatio .menu__item {
+    position: relative;
+    -webkit-transition: color .25s;
+    transition: color .25s;
+}
+
+.menu--horatio .menu__item a {
+    position: relative;
+    color: inherit;
+}
+
+.menu--horatio .menu__item--current {
+    color: #006C90;
+}
+
+.menu--horatio .menu__item:hover {
+    color: #006C90;
+}
+
+.menu--horatio .menu__item::before, .menu--horatio .menu__item::after, .menu--horatio .menu__item a::before, .menu--horatio .menu__item a::after {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 2px solid currentColor;
+}
+
+.menu--horatio .menu__item::before {
+    border-width: 0 0 0 2px;
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+}
+
+.menu--horatio .menu__item::after {
+    border-width: 0 2px 0 0;
+    -webkit-transform-origin: right top;
+    transform-origin: right top;
+}
+
+.menu--horatio .menu__item a::before, .menu--horatio .menu__item a::after {
+    z-index: 2;
+}
+
+.menu--horatio .menu__item a::before {
+    border-width: 2px 0 0;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+}
+
+.menu--horatio .menu__item a::after {
+    border-width: 0 0 2px;
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+}
+
+.menu--horatio .menu__item--current::before, .menu--horatio .menu__item--current::after, .menu--horatio .menu__item:hover::before, .menu--horatio .menu__item:hover::after, .menu--horatio .menu__item--current a::before, .menu--horatio .menu__item--current a::after, .menu--horatio .menu__item:hover a::before, .menu--horatio .menu__item:hover a::after {
+    content: '';
+}
+
+.menu--horatio .menu__item:not(.menu__item--current):hover::before, .menu--horatio .menu__item:not(.menu__item--current):hover::after, .menu--horatio .menu__item:not(.menu__item--current):hover a::before, .menu--horatio .menu__item:not(.menu__item--current):hover a::after {
+    -webkit-animation: horatio-anim .6s ease-in-out;
+    animation: horatio-anim .6s ease-in-out;
+}
+
+.menu--horatio .menu__item:not(.menu__item--current):hover::before {
+    -webkit-animation-delay: -.45s;
+    animation-delay: -.45s;
+}
+
+.menu--horatio .menu__item:not(.menu__item--current):hover a::before {
+    -webkit-animation-delay: -.3s;
+    animation-delay: -.3s;
+}
+
+.menu--horatio .menu__item:not(.menu__item--current):hover::after {
+    -webkit-animation-delay: -.15s;
+    animation-delay: -.15s;
+}
+
+.menu--horatio .menu__item:not(.menu__item--current):hover a::after {
+    -webkit-animation-delay: 0;
+    animation-delay: 0;
+}
+
+@-webkit-keyframes horatio-anim {
+    0%, 33% {
+        opacity: 0;
+        -webkit-transform: rotate(45deg) scale(1.5);
+        transform: rotate(45deg) scale(1.5);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes horatio-anim {
+    0%, 33% {
+        opacity: 0;
+        -webkit-transform: rotate(45deg) scale(1.5);
+        transform: rotate(45deg) scale(1.5);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+//end nav
+//orange block turn
+.cl-effect-2 span {
+    position: relative;
+    background: #FFC600;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.cl-effect-2 span::before {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFC600;
+    content: attr(data-hover);
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+}
+
+.cl-effect-2 span:hover, .cl-effect-2 span:focus {
+    transform: rotateX(90deg) translate(0, -22px);
+}
+
+.cl-effect-2 span:hover span::before, .cl-effect-2 span:focus span::before {
+    background: #FFC600;
+}
+
+//end orange block turn
+//scroling
+//end scoling
