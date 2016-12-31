@@ -3,6 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The resume</title>
+    <meta name="description" content="Demonstration site" />
+    <meta name="keywords" content="web design, styles, inspiration, pseudo-element, SVG,
+ animation" />
+    <meta name="author" content="Codrops" />
     <title>Document</title>
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="css/libs.min.css">
@@ -10,8 +17,8 @@
 </head>
 
 <body>
-    <header class="preload">
-        <div id="top" class="name">
+    <header id="top" class="preload">
+        <div class="name">
             <span class="resume">
                 <b class="t">t</b>
                 <b class="h">h</b>
@@ -30,12 +37,12 @@
             <div class="tel">+ 3 8 0 9 3 0 1 5 1 9 1 9</div>
         </div>
     </header>
-    <nav id="menu" class="menu menu--horatio">
-        <ul class="menu__list">
-            <li class="menu__item"><a href="#top" class="menu__link">Title</a></li>
+    <nav class="menu menu--iris">
+        <ul id="menu" class="menu__list">
+            <li class="menu__item menu__item--current"><a href="#top" class="menu__link">Title</a></li>
+            <li class="menu__item"><a href="#education" class="menu__link">Education</a></li>
             <li class="menu__item"><a href="#skills" class="menu__link">Skills</a></li>
             <li class="menu__item"><a href="#aboutme" class="menu__link">About me</a></li>
-            <li class="menu__item"><a href="#contact" class="menu__link">Contact</a></li>
         </ul>
     </nav>
     <div class="wrap-info">
@@ -63,11 +70,11 @@
                                     </p>
                                 </div>
                                 <ul class="respons">
-                                    <li>Участвовал в большом проэкте Victora Gavro - Insta-tools</li>
-                                    <li>Помогал делать сайт для компании http://dizaap.com/</li>
-                                    <li>Работал с тикетами, помогал с версткой, переделывал чужой код;</li>
+                                    <li>Принимал участие в крупном проэкте Victora Gavro - Insta-tools;</li>
+                                    <li>Работал с тикетами, правил уже существующий код;</li>
                                     <li>Применял ng- "c коробки" angular 1.6;</li>
-                                    <li>Вёрстка по PSD макетам и с Layout. SEO-дружественный код;</li>
+                                    <li>Верстал сайт для компании http://dizaap.com/</li>
+                                    <li>Вёрстка по PSD макетам и Layout. SEO-дружественный код;</li>
                                     <li>CSS, jquery анимация;</li>
                                     <li>Оптимизация, компиляция, конкатенация и минимализация рабочего кода;</li>
                                     <li>Пишу акуратный крос-браузерный, pixel-perfect, адаптивный код под размеры разных устройств;</li>
@@ -85,13 +92,12 @@
                                         <br><a href="http://dizaap.com/ru/ ">http://dizaap.com/ru/</a></p>
                                 </div>
                                 <ul class="respons">
-                                    <li>Обслуживал 2 офиса 30 PC;</li>
-                                    <li>Администрирование Windows XP/7/8/10, macOS, linux;</li>
+                                    <li>Администрировал 2 офиса 30 PC;</li>
                                     <li>Настройка сетевого оборудования, VPN, Wi-Fi, UniFi, (принтеров, МФУ);</li>
                                     <li>Установка, настройка, обновление програм;</li>
                                     <li>Решение проблем удаленно;</li>
                                     <li>Коммутация патч-панели, обжимка патч-кордов RJ45, IP-телефония;</li>
-                                    <li>Установка, настройка windows, linux;</li>
+                                    <li>Установка, настройка Windows XP/7/8/10, macOS, linux;</li>
                                     <li>Опыт работы (TP-link, Cisco) локальных сетей, LAN Ethernet(OSI);</li>
                                 </ul>
                             </div>
@@ -100,15 +106,15 @@
                                 <h4>RESPONSIBILITY</h4>
                                 <div class="work-info">
                                     <p><b>Technical support</b>
-                                        <br> 02.2014 - 07.2015</p>
+                                        <br> 09.2014 - 07.2015</p>
                                     <hr class="sepor hidden-xs hidden-sm">
                                     <p><b>GOANTIFRAUD ©</b>
                                         <br><a href="https://goantifraud.com/ru">https://goantifraud.com/ru</a></p>
                                 </div>
                                 <ul class="respons">
-                                    <li>Концультировал людей по принципах работы VoIP-телефонии (SIP, H.323, TLS, SRTP)</li>
-                                    <li>Администрировал программно-аппаратную платформы компании</li>
-                                    <li>Техническая поддержка клиентов, обучение клиентов техническим особенностям работы с программным обеспечением</li>
+                                    <li>Концультация по принципах работы VoIP-телефонии (SIP, H.323, TLS, SRTP)</li>
+                                    <li>Администрирование программно-аппаратной платформы компании</li>
+                                    <li>Техническая поддержка клиентов, обучение их техническим особенностям работы с программным обеспечением</li>
                                     <li>Участие в разработке, отчетность, оперативное решение проблем, мониторинг</li>
                                     <li>Тестирование, обработка обращений и постановка задач в баг-трекере</li>
                                 </ul>
@@ -118,7 +124,7 @@
                 </div>
             </div>
             <div class="right-col">
-                <div class="wrap-slider-education">
+                <div id="education" class="wrap-slider-education">
                     <div class="title hidden-xs hidden-sm hidden-md">
                         <div class="cl-effect-2 hidden-xs hidden-sm">
                             EDU
@@ -161,18 +167,21 @@
                                             <hr>
                                             <p>Psychoanalysis</p>
                                         </div>
-                                        <img src="img/note.jpg" alt="universe">
+                                        <img src="img/note.jpg" alt="universe2">
                                     </div>
                                 </div>
                                 <div class="item">
                                     <div class="education ">
                                         <div>
-                                            <p>National University of the
-                                                <br> &nbsp;&nbsp;State Tax Service of Ukraine
-                                                <br>
-                                                <b>&nbsp;&nbsp;&nbsp;2004-2009</b> </p>
-                                            <hr>
-                                            <p>Control &amp; revision</p>
+                                            <p>Kourses:
+                                                <br style="margin: 0px; padding: 0;">
+                                                <b>&nbsp;&nbsp;&nbsp;2014-2016</b>
+                                                <hr>
+                                                <br>Tester: Perspectiva 21;
+                                                <br>my-sql: Perspectiva 21;
+                                                <br>Web-design: Kiev, Passage
+                                                <br>Tbilisi 4/10 of.111a
+                                            </p>
                                         </div>
                                         <img src="img/22.jpg" alt="universe">
                                     </div>
@@ -182,13 +191,13 @@
                             <a class="left" href="#myCarousel" data-slide="prev">
                                 <img class="left-arr" src="img/left.png" alt="prev">
                             </a>
-                            <a id="skills" class="right" href="#myCarousel" data-slide="next">
+                            <a class="right" href="#myCarousel" data-slide="next">
                                 <img class="right-arr" src="img/right.png" alt="next">
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="wrap-skills">
+                <div id="skills" class="wrap-skills">
                     <div class="title skills-title hidden-xs hidden-sm hidden-md">
                         <div class="cl-effect-2 hidden-xs hidden-sm">
                             SKIL
@@ -239,33 +248,29 @@
                         </ul>
                     </div>
                 </div>
-                <div class="wrap-aboutme">
+                <div id="aboutme" class="wrap-aboutme">
                     <div class="about-me">
                         <div class="title hidden-xs hidden-sm hidden-md">
-                            <div id="aboutme" class="cl-effect-2 hidden-xs hidden-sm">
+                            <div class="cl-effect-2 hidden-xs hidden-sm">
                                 ABO
                                 <span data-hover="UT ME">UT ME</span>
                             </div>
                         </div>
                         <div class="about-text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis provident a beatae ad non at rerum, deserunt atque laboriosam quidem, sunt, aliquam nisi odit repellendus animi earum consequuntur maxime. Delectus.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas iusto consequatur voluptatibus quo, consectetur odio cupiditate ipsam ducimus perspiciatis.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="wrap-contact">
-                    <div class="title hidden-xs hidden-sm hidden-md">
-                        <div id="contact" class="cl-effect-2 hidden-xs hidden-sm">
-                            CON
-                            <span data-hover="TACT">TACT</span>
-                        </div>
-                    </div>
-                    <div class="contact">
-                        <div class="contact-info">
-                        </div>
-                        <div class="contact-info">
-                        </div>
-                        <div class="contact-info">
+                            <p>Подхожу к задачам ответственно. Я пишу акуратный, адаптивный код, который будет работать на всех браузерах.</p>
+                            <p> Применяю набор в слепую на 2х языках и использую современные технологии верстки, что значительно экономит время заказчику.</p>
+                            <p> Этот сайт-резюмэ я написал самостоятельно для детального ознакомления с моими навыками. В нем я использовал:
+                                <ul>
+                                    <li>java-script в рубрике skills.</li>
+                                    <li>jquery дополняет анимацию вращения блоков, бокового меню и плавного скрола.</li>
+                                    <li>css-animation в шапке, nav и частично в блоках(начало анимации и тайминги).</li>
+                                    <li>Gulp собирал проэкт, и конкотенировал библиотеки.</li>
+                                    <li>Прекомпилятор использовал SCSS.</li>
+                                    <li>Photoshop креативил шапку, значки и удалял водяние знаки.</li>
+                                    <li>Bootstrap подгонял сайт под размеры экрана, слайдер carousel тоже его.</li>
+                                    <li>Git, npm и bower запускал с терминала bush.</li>
+                                </ul>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -273,9 +278,37 @@
         </div>
     </div>
     <footer>
+        <div class="wrap-contact">
+            <div class="wrap-contact-title">
+                <div class="title hidden-xs hidden-sm hidden-md">
+                    <div class="cl-effect-2 hidden-xs hidden-sm">
+                        CON
+                        <span data-hover="TACT">TACT</span>
+                    </div>
+                </div>
+            </div>
+            <div class="contact">
+                <div>
+                    <img src="img/tel15.png" alt=""><span>+38-093-015-19-19</span>
+                </div>
+                <div>
+                    <img src="img/mail4.png" alt=""><span><a href="https://mail.ru/"> bash.broski@mail.ru</a></span>
+                </div>
+                <div>
+                    <img src="img/skipe.png" alt=""><span>alexquery</span>
+                </div>
+                <div>
+                    <img src="img/github.png" alt=""><a href="https://github.com/nagana12/resume.git"><b>https://github.com/resume.git</b></a>
+                </div>
+            </div>
+        </div>
     </footer>
-    <script src="js/common.js"></script>
     <script src="js/libs.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/classie-nav.js">
+    </script>
+    <script src="js/script-scroll.js"></script>
+    <script src="js/common.js"></script>
     <script src="js/modernizr.custom.js"></script>
 </body>
 

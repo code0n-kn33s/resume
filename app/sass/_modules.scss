@@ -1,6 +1,8 @@
 /*Глобальные стили*/
 
-*, :before, :after {
+*,
+:before,
+:after {
     box-sizing: border-box;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -26,9 +28,11 @@ body {
 
 /* вставка для imput, для заполнения пустых полей */
 
-body input:focus:required:invalid, body textarea:focus:required:invalid {}
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {}
 
-body input:required:invalid, body textarea:required:invalid {}
+body input:required:invalid,
+body textarea:required:invalid {}
 
 
 /* отмена выделения */
@@ -45,13 +49,6 @@ body {
 .img_info {
     margin-left: 0;
     padding-left: 0;
-}
-
-
-/*для IE*/
-
-header, nav, section, article, aside, footer {
-    display: block
 }
 
 
@@ -80,6 +77,7 @@ nav {
     position: fixed;
     left: 10px;
     top: 24%;
+    font-family: lato;
 }
 
 .menu__list {
@@ -93,129 +91,69 @@ nav {
     cursor: pointer;
 }
 
-.menu__link:hover, .menu__link:focus {
+.menu__link:hover,
+.menu__link:focus {
     outline: none;
     text-decoration: none;
 }
 
 //styles nav animation
-.menu--horatio .menu__item {
-    margin-left: 2px;
-    margin-right: 2px;
-    color: #4e3c3e;
-    font-family: aleks;
+.menu--iris .menu__item {
+    margin: 0 1em;
 }
 
-.menu--horatio .menu__item {
+.menu--iris .menu__link {
     position: relative;
-    -webkit-transition: color .25s;
-    transition: color .25s;
+    text-align: center;
+    color: #b5b5b5;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
 }
 
-.menu--horatio .menu__item a {
-    position: relative;
-    color: inherit;
+.menu--iris .menu__link:hover,
+.menu--iris .menu__link:focus {
+    color: #929292;
 }
 
-.menu--horatio .menu__item--current {
-    color: #006C90;
+.menu--iris .menu__item--current .menu__link {
+    color: black;
 }
 
-.menu--horatio .menu__item:hover {
-    color: #006C90;
-}
-
-.menu--horatio .menu__item::before, .menu--horatio .menu__item::after, .menu--horatio .menu__item a::before, .menu--horatio .menu__item a::after {
+.menu--iris .menu__link::before,
+.menu--iris .menu__link::after {
+    content: '';
     position: absolute;
-    display: block;
+    width: 10px;
+    height: 10px;
+    opacity: 0;
+    border: 2px solid #FFC600;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.17, 0.67, 0.05, 1.29);
+    transition-timing-function: cubic-bezier(0.17, 0.67, 0.05, 1.29);
+}
+
+.menu--iris .menu__link::before {
     top: 0;
+    left: 0;
+    border-width: 2px 0 0 2px;
+    -webkit-transform: translate3d(10px, 10px, 0);
+    transform: translate3d(10px, 10px, 0);
+}
+
+.menu--iris .menu__link::after {
     right: 0;
     bottom: 0;
-    left: 0;
-    border: 2px solid currentColor;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: translate3d(-10px, -10px, 0);
+    transform: translate3d(-10px, -10px, 0);
 }
 
-.menu--horatio .menu__item::before {
-    border-width: 0 0 0 2px;
-    -webkit-transform-origin: left bottom;
-    transform-origin: left bottom;
-}
-
-.menu--horatio .menu__item::after {
-    border-width: 0 2px 0 0;
-    -webkit-transform-origin: right top;
-    transform-origin: right top;
-}
-
-.menu--horatio .menu__item a::before, .menu--horatio .menu__item a::after {
-    z-index: 2;
-}
-
-.menu--horatio .menu__item a::before {
-    border-width: 2px 0 0;
-    -webkit-transform-origin: left top;
-    transform-origin: left top;
-}
-
-.menu--horatio .menu__item a::after {
-    border-width: 0 0 2px;
-    -webkit-transform-origin: right bottom;
-    transform-origin: right bottom;
-}
-
-.menu--horatio .menu__item--current::before, .menu--horatio .menu__item--current::after, .menu--horatio .menu__item:hover::before, .menu--horatio .menu__item:hover::after, .menu--horatio .menu__item--current a::before, .menu--horatio .menu__item--current a::after, .menu--horatio .menu__item:hover a::before, .menu--horatio .menu__item:hover a::after {
-    content: '';
-}
-
-.menu--horatio .menu__item:not(.menu__item--current):hover::before, .menu--horatio .menu__item:not(.menu__item--current):hover::after, .menu--horatio .menu__item:not(.menu__item--current):hover a::before, .menu--horatio .menu__item:not(.menu__item--current):hover a::after {
-    -webkit-animation: horatio-anim .6s ease-in-out;
-    animation: horatio-anim .6s ease-in-out;
-}
-
-.menu--horatio .menu__item:not(.menu__item--current):hover::before {
-    -webkit-animation-delay: -.45s;
-    animation-delay: -.45s;
-}
-
-.menu--horatio .menu__item:not(.menu__item--current):hover a::before {
-    -webkit-animation-delay: -.3s;
-    animation-delay: -.3s;
-}
-
-.menu--horatio .menu__item:not(.menu__item--current):hover::after {
-    -webkit-animation-delay: -.15s;
-    animation-delay: -.15s;
-}
-
-.menu--horatio .menu__item:not(.menu__item--current):hover a::after {
-    -webkit-animation-delay: 0;
-    animation-delay: 0;
-}
-
-@-webkit-keyframes horatio-anim {
-    0%, 33% {
-        opacity: 0;
-        -webkit-transform: rotate(45deg) scale(1.5);
-        transform: rotate(45deg) scale(1.5);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: none;
-        transform: none;
-    }
-}
-
-@keyframes horatio-anim {
-    0%, 33% {
-        opacity: 0;
-        -webkit-transform: rotate(45deg) scale(1.5);
-        transform: rotate(45deg) scale(1.5);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: none;
-        transform: none;
-    }
+.menu--iris .menu__item--current .menu__link::before,
+.menu--iris .menu__item--current .menu__link::after {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
 
 //end nav
@@ -250,14 +188,14 @@ nav {
     transform-origin: 50% 0;
 }
 
-.cl-effect-2 span:hover, .cl-effect-2 span:focus {
+.cl-effect-2 span:hover,
+.cl-effect-2 span:focus {
     transform: rotateX(90deg) translate(0, -22px);
 }
 
-.cl-effect-2 span:hover span::before, .cl-effect-2 span:focus span::before {
+.cl-effect-2 span:hover span::before,
+.cl-effect-2 span:focus span::before {
     background: #FFC600;
 }
 
 //end orange block turn
-//scroling
-//end scoling

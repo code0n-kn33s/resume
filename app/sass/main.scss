@@ -11,9 +11,13 @@ header {
 }
 
 a {
-    color: #006C90 !important;
-    text-shadow: none !important;
+    color: #006C90;
+    text-shadow: none;
     font-weight: 800;
+}
+
+hr {
+    background-color: white !important;
 }
 
 .name {
@@ -172,7 +176,11 @@ a {
 
 //start title animation
 @keyframes bounce {
-    from, 60%, 75%, 90%, to {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
         animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
     }
     0% {
@@ -223,6 +231,11 @@ a {
 }
 
 //COLUMNS
+.wrap-info {
+    display: inline-block;
+    border-bottom: 1px solid white;
+}
+
 .wrap-columns {
     box-sizing: border-box;
     padding: 20px 0 15px 0;
@@ -232,7 +245,7 @@ a {
 .left-col {
     display: inline-block;
     width: 50%;
-    border-right: 1px solid #eeeeee;
+    border-right: 1px solid white;
     margin: 0px 0 0 0;
     padding: 0;
     box-sizing: border-box;
@@ -272,7 +285,8 @@ a {
     }
 }
 
-.goantifroud, .dizaap {
+.goantifroud,
+.dizaap {
     h4 {
         padding: 25px 0 10px 0px;
         font-weight: bold;
@@ -414,38 +428,43 @@ a {
 //ABOUT ME
 .wrap-aboutme {
     margin: 20px 0 0 0;
-    border-bottom: 1px solid white;
 }
 
 .about-text {
     display: inline-block;
     padding: 10px 0 0 10px;
+    font-family: aleks;
     p {
-        font-family: aleks;
         padding: 0px 30px 0 70px;
+    }
+    ul {
+        margin-left: 100px;
     }
 }
 
 //CONTACT
-.wrap-contact {
-    padding: 20px 0 20px 0;
+footer {
+    display: inline-block;
+    width: 100%;
+    margin: 30px 0px 20px 0;
 }
 
 .contact {
-    height: 300px;
-    padding: 20px 0 20px 0;
-}
-
-.contact-info {
     display: inline-block;
-    background-color: $orange;
-    width: 150px;
-    font-size: 12px;
-    float: right;
-    color: #454141;
-    font-weight: bold;
-    padding: 5px 10px 13px 50px;
-    margin: 0 30px 0 0;
-    text-align: right;
-    font-family: lato;
+    div {
+        height: 70px;
+        background-color: $orange;
+        float: left;
+        color: #454141;
+        font-weight: bold;
+        margin: 0px 0px 0 40px;
+        padding: 15px 15px 0 0;
+        font-family: lato;
+        text-align: left;
+        img {
+            height: 45px;
+            width: 45px;
+            margin: 0 10px 0 -8px;
+        }
+    }
 }

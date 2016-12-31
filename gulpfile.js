@@ -25,8 +25,9 @@ gulp.task('js-libs', function() {
             'app/libs/magnific-popup/dist/jquery.magnific-popup.js',
             'app/libs/bootstrap/dist/js/bootstrap.js'
         ])
-        .pipe(concat('libs.min.js'))
+        .pipe(concat('libs.js'))
         .pipe(uglify())
+        .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('app/js'))
 });
 
