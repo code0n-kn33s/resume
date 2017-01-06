@@ -1,13 +1,20 @@
 @import "modules";
 @import "fonts";
-$orange: #FFC600;
+$orange: #FED300;
 $blue: #006C90;
 header {
     text-align: center;
-    background: url(../img/head.png) repeat;
+    background: url(../img/head4.png) repeat;
     height: 180px;
-    margin: -60px -100px -30px -100px;
+    margin: -50px -130px 0px -130px;
     border-bottom: 2px solid #eeeeee;
+}
+
+.wrap-header-info {
+    width: 48%;
+    height: inherit;
+    margin: auto;
+    background: rgba(299, 299, 230, 0.4);
 }
 
 a {
@@ -23,7 +30,7 @@ hr {
 .name {
     text-align: center;
     font-family: bebasneue;
-    padding-top: 75px;
+    padding-top: 80px;
     h1 {
         font-weight: bold;
         margin: 0px 0 0 0;
@@ -45,7 +52,7 @@ hr {
     height: 25px;
     font-weight: bold;
     font-size: 16px;
-    background: #e3e3e3;
+    background: rgba(299, 299, 230, 0.8);
     z-index: 10;
 }
 
@@ -234,12 +241,13 @@ hr {
 .wrap-info {
     display: inline-block;
     border-bottom: 1px solid white;
+    background: rgba(299, 299, 230, 0.2);
 }
 
 .wrap-columns {
     box-sizing: border-box;
-    padding: 20px 0 15px 0;
-    margin: 30px 0 10px 0;
+    padding: 0px 0 15px 0;
+    margin: 20px 0 10px 0;
 }
 
 .left-col {
@@ -247,7 +255,7 @@ hr {
     width: 50%;
     border-right: 1px solid white;
     margin: 0px 0 0 0;
-    padding: 0;
+    padding: 0 0 0px -40px;
     box-sizing: border-box;
     float: left;
 }
@@ -324,29 +332,42 @@ hr {
 
 //SLIDER & EDUCATION
 .education {
-    margin: 20px 0px 0px 50px;
+    display: inline-block;
+    margin: 20px 0px 0px 40px;
     font-size: 13px;
     float: left;
-    &>div {
-        text-align: left;
-        float: left;
-        box-sizing: border-box;
-        hr {
-            width: 60px;
-            margin: 0 0 0 20px;
-            padding: 0;
-        }
-        p {
-            margin: 5px 50px 5px 10px;
-            font-family: aq;
-            font-size: 15px;
-        }
+}
+
+.education-cont {
+    width: 200px;
+    display: inline-block;
+    text-align: left;
+    float: left;
+    box-sizing: border-box;
+    hr {
+        width: 60px;
+        margin: 0 0 0 20px;
+        padding: 0;
     }
+    p {
+        margin: 5px 0px 5px 10px;
+        font-family: aq;
+        font-size: 15px;
+    }
+}
+
+.education-img {
+    width: 200px;
+    display: inline-block;
+    float: left;
+    margin-left: 0px;
+    padding: 0;
     img {
         height: 130px;
         width: 160px;
-        margin: -10px 20px 10px -30px;
         padding: 5px;
+        margin: -10px 0 0 20px;
+        float: left;
     }
 }
 
@@ -382,18 +403,17 @@ hr {
 
 .left-arr {
     position: absolute;
+    top: 35%;
     height: 45px;
     width: 45px;
-    left: -5%;
-    top: 32%;
 }
 
 .right-arr {
     position: absolute;
+    top: 35%;
     height: 45px;
     width: 45px;
-    right: -5%;
-    top: 32%;
+    right: 4%;
 }
 
 //SKILLS
@@ -405,7 +425,7 @@ hr {
 }
 
 .skills {
-    margin: 0px 0 20px 210px;
+    margin: 0px 0 20px 200px;
     li {
         height: 20px;
         width: 338px;
@@ -449,22 +469,67 @@ footer {
     margin: 30px 0px 20px 0;
 }
 
+.wrap-contact {
+    display: inherit;
+    width: inherit;
+}
+
+.wrap-title {
+    display: inherit;
+    float: left;
+    width: 20%;
+}
+
 .contact {
-    display: inline-block;
+    display: inherit;
+    width: 80%;
     div {
         height: 70px;
         background-color: $orange;
         float: left;
         color: #454141;
         font-weight: bold;
-        margin: 0px 0px 0 40px;
-        padding: 15px 15px 0 0;
+        margin-left: 3%;
+        padding-top: 10px 5px 0 0;
         font-family: lato;
         text-align: left;
+        padding-right: 10px;
         img {
             height: 45px;
             width: 45px;
-            margin: 0 10px 0 -8px;
+            margin: 0 10px 0 -15px;
         }
+    }
+}
+
+@media (max-width: 1260px) {
+    .contact {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1260px) and (min-width: 1200px) {
+    /* для разрешения экрана от 470 до 930 пикселей */
+    .wrap-title {
+        display: none;
+    }
+    /* боковая колонка смещается согласно расположению в HTML и меняет фон */
+}
+
+@media (max-width: 756px) {
+    .mail {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .skills {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 793px) {
+    .skipe {
+        display: none;
     }
 }

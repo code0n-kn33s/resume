@@ -18,8 +18,9 @@
 
 <body>
     <header id="top" class="preload">
-        <div class="name">
-            <span class="resume">
+        <div class="wrap-header-info">
+            <div class="name">
+                <span class="resume">
                 <b class="t">t</b>
                 <b class="h">h</b>
                 <b class="e">e</b>
@@ -31,10 +32,11 @@
                 <b class="m">m</b>
                 <b class="e3">e</b>
             </span>
-            <h1><span class="yaku">Bashinskiy Alex</span></h1>
-            <div class="lines">Front-end
+                <h1><span class="yaku">Bashinskiy Alex</span></h1>
+                <div class="lines">Front-end
+                </div>
+                <div class="tel">+ 3 8 0 9 3 0 1 5 1 9 1 9</div>
             </div>
-            <div class="tel">+ 3 8 0 9 3 0 1 5 1 9 1 9</div>
         </div>
     </header>
     <nav class="menu menu--iris">
@@ -42,7 +44,7 @@
             <li class="menu__item menu__item--current"><a href="#top" class="menu__link">Title</a></li>
             <li class="menu__item"><a href="#education" class="menu__link">Education</a></li>
             <li class="menu__item"><a href="#skills" class="menu__link">Skills</a></li>
-            <li class="menu__item"><a href="#aboutme" class="menu__link">About me</a></li>
+            <li class="menu__item"><a href="#aboutme" class="menu__link">About me&<br>Contact</a></li>
         </ul>
     </nav>
     <div class="wrap-info">
@@ -75,7 +77,7 @@
                                     <li>Применял ng- "c коробки" angular 1.6;</li>
                                     <li>Верстал сайт для компании http://dizaap.com/</li>
                                     <li>Вёрстка по PSD макетам и Layout. SEO-дружественный код;</li>
-                                    <li>CSS, jquery анимация;</li>
+                                    <li>CSS и jquery-анимация, media-queryes;</li>
                                     <li>Оптимизация, компиляция, конкатенация и минимализация рабочего кода;</li>
                                     <li>Пишу акуратный крос-браузерный, pixel-perfect, адаптивный код под размеры разных устройств;</li>
                                     <li>Photoshop: аккуратная нарезка макетов, применение спрайтов, пиксельхантинг;</li>
@@ -141,6 +143,8 @@
                                 <li data-target="#myCarousel" data-slide-to="0 " class="active"></li>
                                 <li data-target="#myCarousel" data-slide-to="1 "></li>
                                 <li data-target="#myCarousel" data-slide-to="2"></li>
+                                <li data-target="#myCarousel" data-slide-to="3"></li>
+                                <li data-target="#myCarousel" data-slide-to="4"></li>
                             </ol>
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner" role="listbox">
@@ -153,12 +157,14 @@
                                             <hr>
                                             <p>Control &amp; revision </p>
                                         </div>
-                                        <img src="img/universe.jpg" alt="universe">
+                                        <div class="education-img">
+                                            <img src="img/universe.jpg" alt="universe">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div class="education ">
-                                        <div>
+                                    <div class="education">
+                                        <div class="education-cont">
                                             <p>
                                                 International Institute
                                                 <br> &nbsp;&nbsp;of Fundamental Psychology
@@ -167,23 +173,58 @@
                                             <hr>
                                             <p>Psychoanalysis</p>
                                         </div>
-                                        <img src="img/note.jpg" alt="universe2">
+                                        <div class="education-img">
+                                            <img src="img/note.jpg" alt="universe2">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="item">
                                     <div class="education ">
-                                        <div>
-                                            <p>Kourses:
-                                                <br style="margin: 0px; padding: 0;">
-                                                <b>&nbsp;&nbsp;&nbsp;2014-2016</b>
-                                                <hr>
-                                                <br>Tester: Perspectiva 21;
-                                                <br>my-sql: Perspectiva 21;
-                                                <br>Web-design: Kiev, Passage
-                                                <br>Tbilisi 4/10 of.111a
+                                        <div class="education-cont">
+                                            <p>
+                                                Kourses: Perspectiva of 21
+                                                <br> &nbsp;&nbsp;senctuary
+                                                <br> &nbsp;&nbsp;&nbsp;
+                                                <b>2014</b> </p>
+                                            <hr>
+                                            <p>Tester, QA</p>
+                                        </div>
+                                        <div class="education-img">
+                                            <img src="img/book.jpg" alt="universe">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="education ">
+                                        <div class="education-cont">
+                                            <p>
+                                                Kourses: Perspectiva
+                                                <br> &nbsp;&nbsp;of 21 senctuary
+                                                <br> &nbsp;&nbsp;&nbsp;
+                                                <b>2014</b> </p>
+                                            <hr>
+                                            <p>My-sql</p>
+                                        </div>
+                                        <div class="education-img">
+                                            <img src="img/22.jpg" alt="universe">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="education ">
+                                        <div class="education-cont">
+                                            <p>
+                                                Kourses: Kiev, Passage
+                                                <br> &nbsp;&nbsp;Tbilisi 4/10, office 111a
+                                                <br> &nbsp;&nbsp;&nbsp;
+                                                <b>2016</b> </p>
+                                            <hr>
+                                            <p>Front-end
                                             </p>
                                         </div>
-                                        <img src="img/22.jpg" alt="universe">
+                                        <div class="education-img">
+                                            <img src="img/courses3.jpg" alt="universe">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -198,8 +239,8 @@
                     </div>
                 </div>
                 <div id="skills" class="wrap-skills">
-                    <div class="title skills-title hidden-xs hidden-sm hidden-md">
-                        <div class="cl-effect-2 hidden-xs hidden-sm">
+                    <div class="title skills-title hidden-xs">
+                        <div class="cl-effect-2 hidden-xs">
                             SKIL
                             <span data-hover="LS">LS</span>
                         </div>
@@ -277,11 +318,12 @@
             </div>
         </div>
     </div>
+    </div>
     <footer>
         <div class="wrap-contact">
-            <div class="wrap-contact-title">
+            <div class="wrap-title">
                 <div class="title hidden-xs hidden-sm hidden-md">
-                    <div class="cl-effect-2 hidden-xs hidden-sm">
+                    <div class="cl-effect-2 hidden-xs hidden-sm hidden-md">
                         CON
                         <span data-hover="TACT">TACT</span>
                     </div>
@@ -289,15 +331,15 @@
             </div>
             <div class="contact">
                 <div>
-                    <img src="img/tel15.png" alt=""><span>+38-093-015-19-19</span>
+                    <img src="img/tel.png" alt=""><span>+38-093-015-19-19</span>
                 </div>
-                <div>
-                    <img src="img/mail4.png" alt=""><span><a href="https://mail.ru/"> bash.broski@mail.ru</a></span>
+                <div class="mail">
+                    <img src="img/mail.png" alt=""><span><a href="https://mail.ru/"> bash.broski@mail.ru</a></span>
                 </div>
-                <div>
+                <div class="skipe hidden-xs hidden-md">
                     <img src="img/skipe.png" alt=""><span>alexquery</span>
                 </div>
-                <div>
+                <div class="hidden-xs hidden-sm">
                     <img src="img/github.png" alt=""><a href="https://github.com/nagana12/resume.git"><b>https://github.com/resume.git</b></a>
                 </div>
             </div>

@@ -16,7 +16,7 @@ body {
   background-image: -webkit-linear-gradient(top, #EBEBEB 0%, #DCDDDF 48%, #C4C5C7 99%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#EBEBEB), color-stop(48%, #DCDDDF), color-stop(99%, #C4C5C7));
   background-image: linear-gradient(-180deg, #EBEBEB 0%, #DCDDDF 48%, #C4C5C7 99%);
-  margin: 20px 100px 20px 100px;
+  margin: 0px 130px 20px 130px;
   padding: 0;
   height: 100%;
   font-family: bebasneue lato fontawesome aq aleks;
@@ -95,7 +95,7 @@ nav {
   width: 10px;
   height: 10px;
   opacity: 0;
-  border: 2px solid #FFC600;
+  border: 2px solid #FED300;
   -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
   -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
   transition: opacity 0.3s, -webkit-transform 0.3s;
@@ -126,7 +126,7 @@ nav {
 
 .cl-effect-2 span {
   position: relative;
-  background: #FFC600;
+  background: #FED300;
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
@@ -143,7 +143,7 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #FFC600;
+  background: #FED300;
   content: attr(data-hover);
   -webkit-transform: rotateX(-90deg);
   transform: rotateX(-90deg);
@@ -158,7 +158,7 @@ nav {
 
 .cl-effect-2 span:hover span::before,
 .cl-effect-2 span:focus span::before {
-  background: #FFC600; }
+  background: #FED300; }
 
 @font-face {
   font-family: bebasneue;
@@ -234,10 +234,16 @@ nav {
 
 header {
   text-align: center;
-  background: url(../img/head.png) repeat;
+  background: url(../img/head4.png) repeat;
   height: 180px;
-  margin: -60px -100px -30px -100px;
+  margin: -50px -130px 0px -130px;
   border-bottom: 2px solid #eeeeee; }
+
+.wrap-header-info {
+  width: 48%;
+  height: inherit;
+  margin: auto;
+  background: rgba(255, 255, 230, 0.4); }
 
 a {
   color: #006C90;
@@ -250,7 +256,7 @@ hr {
 .name {
   text-align: center;
   font-family: bebasneue;
-  padding-top: 75px; }
+  padding-top: 80px; }
   .name h1 {
     font-weight: bold;
     margin: 0px 0 0 0;
@@ -266,14 +272,14 @@ hr {
 
 .lines {
   display: inline-block;
-  border-top: 2px solid #FFC600;
-  border-bottom: 2px solid #FFC600;
+  border-top: 2px solid #FED300;
+  border-bottom: 2px solid #FED300;
   width: 110px;
   position: relative;
   height: 25px;
   font-weight: bold;
   font-size: 16px;
-  background: #e3e3e3;
+  background: rgba(255, 255, 230, 0.8);
   z-index: 10; }
 
 .tel {
@@ -517,20 +523,21 @@ hr {
 
 .wrap-info {
   display: inline-block;
-  border-bottom: 1px solid white; }
+  border-bottom: 1px solid white;
+  background: rgba(255, 255, 230, 0.2); }
 
 .wrap-columns {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 20px 0 15px 0;
-  margin: 30px 0 10px 0; }
+  padding: 0px 0 15px 0;
+  margin: 20px 0 10px 0; }
 
 .left-col {
   display: inline-block;
   width: 50%;
   border-right: 1px solid white;
   margin: 0px 0 0 0;
-  padding: 0;
+  padding: 0 0 0px -40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   float: left; }
@@ -577,7 +584,7 @@ hr {
 
 .respons li:before {
   content: "➤";
-  color: #FFC600;
+  color: #FED300;
   padding-right: 20px;
   /* Добавляем в качестве маркера символ */ }
 
@@ -591,27 +598,39 @@ hr {
   width: 250px; }
 
 .education {
-  margin: 20px 0px 0px 50px;
+  display: inline-block;
+  margin: 20px 0px 0px 40px;
   font-size: 13px;
   float: left; }
-  .education > div {
-    text-align: left;
-    float: left;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box; }
-    .education > div hr {
-      width: 60px;
-      margin: 0 0 0 20px;
-      padding: 0; }
-    .education > div p {
-      margin: 5px 50px 5px 10px;
-      font-family: aq;
-      font-size: 15px; }
-  .education img {
+
+.education-cont {
+  width: 200px;
+  display: inline-block;
+  text-align: left;
+  float: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .education-cont hr {
+    width: 60px;
+    margin: 0 0 0 20px;
+    padding: 0; }
+  .education-cont p {
+    margin: 5px 0px 5px 10px;
+    font-family: aq;
+    font-size: 15px; }
+
+.education-img {
+  width: 200px;
+  display: inline-block;
+  float: left;
+  margin-left: 0px;
+  padding: 0; }
+  .education-img img {
     height: 130px;
     width: 160px;
-    margin: -10px 20px 10px -30px;
-    padding: 5px; }
+    padding: 5px;
+    margin: -10px 0 0 20px;
+    float: left; }
 
 .git-hub {
   display: inline-block;
@@ -640,17 +659,16 @@ hr {
 
 .left-arr {
   position: absolute;
+  top: 35%;
   height: 45px;
-  width: 45px;
-  left: -5%;
-  top: 32%; }
+  width: 45px; }
 
 .right-arr {
   position: absolute;
+  top: 35%;
   height: 45px;
   width: 45px;
-  right: -5%;
-  top: 32%; }
+  right: 4%; }
 
 .wrap-skills {
   display: inline-block;
@@ -660,18 +678,18 @@ hr {
   margin-top: 20px; }
 
 .skills {
-  margin: 0px 0 20px 210px; }
+  margin: 0px 0 20px 200px; }
   .skills li {
     height: 20px;
     width: 338px;
-    border: 1px solid #FFC600;
+    border: 1px solid #FED300;
     list-style-type: none;
     margin-bottom: 5px; }
     .skills li div {
       font-family: aleks;
       height: 100%;
       width: 0;
-      background: #FFC600;
+      background: #FED300;
       padding-left: 35px;
       color: #454141;
       -webkit-transition: width 5s;
@@ -695,19 +713,52 @@ footer {
   width: 100%;
   margin: 30px 0px 20px 0; }
 
+.wrap-contact {
+  display: inherit;
+  width: inherit; }
+
+.wrap-title {
+  display: inherit;
+  float: left;
+  width: 20%; }
+
 .contact {
-  display: inline-block; }
+  display: inherit;
+  width: 80%; }
   .contact div {
     height: 70px;
-    background-color: #FFC600;
+    background-color: #FED300;
     float: left;
     color: #454141;
     font-weight: bold;
-    margin: 0px 0px 0 40px;
-    padding: 15px 15px 0 0;
+    margin-left: 3%;
+    padding-top: 10px 5px 0 0;
     font-family: lato;
-    text-align: left; }
+    text-align: left;
+    padding-right: 10px; }
     .contact div img {
       height: 45px;
       width: 45px;
-      margin: 0 10px 0 -8px; }
+      margin: 0 10px 0 -15px; }
+
+@media (max-width: 1260px) {
+  .contact {
+    width: 100%; } }
+
+@media (max-width: 1260px) and (min-width: 1200px) {
+  /* для разрешения экрана от 470 до 930 пикселей */
+  .wrap-title {
+    display: none; }
+  /* боковая колонка смещается согласно расположению в HTML и меняет фон */ }
+
+@media (max-width: 756px) {
+  .mail {
+    display: none; } }
+
+@media (max-width: 768px) {
+  .skills {
+    margin-left: 10px; } }
+
+@media (max-width: 793px) {
+  .skipe {
+    display: none; } }
