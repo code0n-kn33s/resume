@@ -23,7 +23,8 @@ gulp.task('js-libs', function() {
     return gulp.src([
             'app/libs/jquery/dist/jquery.js',
             'app/libs/magnific-popup/dist/jquery.magnific-popup.js',
-            'app/libs/bootstrap/dist/js/bootstrap.js'
+            'app/libs/bootstrap/dist/js/bootstrap.js',
+            'app/libs/jQuery.scrolly/jquery.scroolly.min.js',
         ])
         .pipe(concat('libs.js'))
         .pipe(uglify())
@@ -34,7 +35,7 @@ gulp.task('js-libs', function() {
 gulp.task('css-libs', ['sass'], function() {
     return gulp.src([
             'app/libs/magnific-popup/dist/magnific-popup.css',
-            'app/libs/bootstrap/dist/css/bootstrap.min.css'
+            'app/libs/bootstrap/dist/css/bootstrap.min.css',
         ])
         .pipe(concat('libs.css'))
         .pipe(cssnano())

@@ -3,16 +3,23 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The resume</title>
+    <meta name="description" content="Demonstration site-resume" />
+    <meta name="keywords" content="web design, styles, inspiration, parallax, pseudo-element, SVG, flat-design, animation" />
+    <meta name="author" content="Codrops" />
     <title>Document</title>
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
-    <header class="preload">
-        <div id="top" class="name">
-            <span class="resume">
+<body data-spy="scroll" data-target="#navbar">
+    <header id="top" class="preload">
+        <div class="wrap-header-info">
+            <div class="name">
+                <span class="resume">
                 <b class="t">t</b>
                 <b class="h">h</b>
                 <b class="e">e</b>
@@ -24,20 +31,21 @@
                 <b class="m">m</b>
                 <b class="e3">e</b>
             </span>
-            <h1><span class="yaku">Bashinskiy Alex</span></h1>
-            <div class="lines">Front-end
+                <h1><span class="yaku">Bashinskiy Alex</span></h1>
+                <div class="lines">Front-end
+                </div>
+                <div class="tel">+ 3 8 0 9 3 0 1 5 1 9 1 9</div>
             </div>
-            <div class="tel">+ 3 8 0 9 3 0 1 5 1 9 1 9</div>
         </div>
     </header>
-    <nav class="menu menu--adrian">
-        <ul id="menu" class="menu__horatio">
-            <li class="menu__item"><a href="#top" class="menu__link">Title</a></li>
+    <div class="navbar">
+        <ul id="menu" class="nav">
+            <li class="active"><a href="#top" class="menu__link">Title</a></li>
+            <li class="menu__item"><a href="#education" class="menu__link">Education</a></li>
             <li class="menu__item"><a href="#skills" class="menu__link">Skills</a></li>
-            <li class="menu__item"><a href="#aboutme" class="menu__link">About me</a></li>
-            <li class="menu__item"><a href="#contact" class="menu__link">Contact</a></li>
+            <li class="menu__item"><a href="#aboutme" class="menu__link">About me&<br>Contact</a></li>
         </ul>
-    </nav>
+    </div>
     <div class="wrap-info">
         <div class="wrap-columns">
             <div class="left-col">
@@ -51,7 +59,7 @@
                         </div>
                         <div class="exp-cont ">
                             <div class="outsourcing ">
-                                <div class="work-info ">
+                                <div class="work-info">
                                     <p><b>Front-end</b>
                                         <br> 09.2015 - this time</p>
                                     <hr class="out-sepor">
@@ -68,7 +76,7 @@
                                     <li>Применял ng- "c коробки" angular 1.6;</li>
                                     <li>Верстал сайт для компании http://dizaap.com/</li>
                                     <li>Вёрстка по PSD макетам и Layout. SEO-дружественный код;</li>
-                                    <li>CSS, jquery анимация;</li>
+                                    <li>CSS и jquery-анимация, parallax, scroll-spy, media-queryes;</li>
                                     <li>Оптимизация, компиляция, конкатенация и минимализация рабочего кода;</li>
                                     <li>Пишу акуратный крос-браузерный, pixel-perfect, адаптивный код под размеры разных устройств;</li>
                                     <li>Photoshop: аккуратная нарезка макетов, применение спрайтов, пиксельхантинг;</li>
@@ -117,7 +125,7 @@
                 </div>
             </div>
             <div class="right-col">
-                <div class="wrap-slider-education">
+                <div id="education" class="wrap-slider-education">
                     <div class="title hidden-xs hidden-sm hidden-md">
                         <div class="cl-effect-2 hidden-xs hidden-sm">
                             EDU
@@ -134,6 +142,8 @@
                                 <li data-target="#myCarousel" data-slide-to="0 " class="active"></li>
                                 <li data-target="#myCarousel" data-slide-to="1 "></li>
                                 <li data-target="#myCarousel" data-slide-to="2"></li>
+                                <li data-target="#myCarousel" data-slide-to="3"></li>
+                                <li data-target="#myCarousel" data-slide-to="4"></li>
                             </ol>
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner" role="listbox">
@@ -146,12 +156,14 @@
                                             <hr>
                                             <p>Control &amp; revision </p>
                                         </div>
-                                        <img src="img/universe.jpg" alt="universe">
+                                        <div class="education-img">
+                                            <img src="img/universe.jpg" alt="universe">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div class="education ">
-                                        <div>
+                                    <div class="education">
+                                        <div class="education-cont">
                                             <p>
                                                 International Institute
                                                 <br> &nbsp;&nbsp;of Fundamental Psychology
@@ -160,20 +172,58 @@
                                             <hr>
                                             <p>Psychoanalysis</p>
                                         </div>
-                                        <img src="img/note.jpg" alt="universe">
+                                        <div class="education-img">
+                                            <img src="img/note.jpg" alt="universe2">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="item">
                                     <div class="education ">
-                                        <div>
-                                            <p>National University of the
-                                                <br> &nbsp;&nbsp;State Tax Service of Ukraine
-                                                <br>
-                                                <b>&nbsp;&nbsp;&nbsp;2004-2009</b> </p>
+                                        <div class="education-cont">
+                                            <p>
+                                                Kourses: Perspectiva of 21
+                                                <br> &nbsp;&nbsp;senctuary
+                                                <br> &nbsp;&nbsp;&nbsp;
+                                                <b>2014</b> </p>
                                             <hr>
-                                            <p>Control &amp; revision</p>
+                                            <p>Tester, QA</p>
                                         </div>
-                                        <img src="img/22.jpg" alt="universe">
+                                        <div class="education-img">
+                                            <img src="img/book.jpg" alt="universe">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="education ">
+                                        <div class="education-cont">
+                                            <p>
+                                                Kourses: Perspectiva
+                                                <br> &nbsp;&nbsp;of 21 senctuary
+                                                <br> &nbsp;&nbsp;&nbsp;
+                                                <b>2014</b> </p>
+                                            <hr>
+                                            <p>My-sql</p>
+                                        </div>
+                                        <div class="education-img">
+                                            <img src="img/22.jpg" alt="universe">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="education ">
+                                        <div class="education-cont">
+                                            <p>
+                                                Kourses: Kiev, Passage
+                                                <br> &nbsp;&nbsp;Tbilisi 4/10, office 111a
+                                                <br> &nbsp;&nbsp;&nbsp;
+                                                <b>2016</b> </p>
+                                            <hr>
+                                            <p>Front-end
+                                            </p>
+                                        </div>
+                                        <div class="education-img">
+                                            <img src="img/courses3.jpg" alt="universe">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -181,15 +231,15 @@
                             <a class="left" href="#myCarousel" data-slide="prev">
                                 <img class="left-arr" src="img/left.png" alt="prev">
                             </a>
-                            <a id="skills" class="right" href="#myCarousel" data-slide="next">
+                            <a class="right" href="#myCarousel" data-slide="next">
                                 <img class="right-arr" src="img/right.png" alt="next">
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="wrap-skills">
-                    <div class="title skills-title hidden-xs hidden-sm hidden-md">
-                        <div class="cl-effect-2 hidden-xs hidden-sm">
+                <div id="skills" class="wrap-skills">
+                    <div class="title skills-title hidden-xs">
+                        <div class="cl-effect-2 hidden-xs">
                             SKIL
                             <span data-hover="LS">LS</span>
                         </div>
@@ -238,20 +288,20 @@
                         </ul>
                     </div>
                 </div>
-                <div class="wrap-aboutme">
+                <div id="aboutme" class="wrap-aboutme">
                     <div class="about-me">
                         <div class="title hidden-xs hidden-sm hidden-md">
-                            <div id="aboutme" class="cl-effect-2 hidden-xs hidden-sm">
+                            <div class="cl-effect-2 hidden-xs hidden-sm">
                                 ABO
                                 <span data-hover="UT ME">UT ME</span>
                             </div>
                         </div>
                         <div class="about-text">
-                            <p>Подхожу к задачам ответственно. Я пишу акуратный, адаптивный код, который будет работать на всех браузерах.</p>
+                            <p>Подхожу к задачам ответственно. Пишу акуратный, адаптивный код, который будет работать на всех браузерах.</p>
                             <p> Применяю набор в слепую на 2х языках и использую современные технологии верстки, что значительно экономит время заказчику.</p>
                             <p> Этот сайт-резюмэ я написал самостоятельно для детального ознакомления с моими навыками. В нем я использовал:
                                 <ul>
-                                    <li>java-script в рубрике skills.</li>
+                                    <li>java-script в рубрике skills, scroll-spy в nav, parallax в background и шапке.</li>
                                     <li>jquery дополняет анимацию вращения блоков, бокового меню и плавного скрола.</li>
                                     <li>css-animation в шапке, nav и частично в блоках(начало анимации и тайминги).</li>
                                     <li>Gulp собирал проэкт, и конкотенировал библиотеки.</li>
@@ -264,36 +314,45 @@
                         </div>
                     </div>
                 </div>
-                <div class="wrap-contact">
-                    <div class="wrap-contact-title">
-                        <div class="title hidden-xs hidden-sm hidden-md">
-                            <div id="contact" class="cl-effect-2 hidden-xs hidden-sm">
-                                CON
-                                <span data-hover="TACT">TACT</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact">
-                        <div>
-                            <img src="img/tel15.png" alt=""><span>+38-093-015-19-19</span>
-                        </div>
-                        <div>
-                            <img src="img/mail4.png" alt=""><span><a href="https://mail.ru/"> bash.broski@mail.ru</a></span>
-                        </div>
-                        <div>
-                            <img src="img/skipe.png" alt=""><span>alexquery</span>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
-    <footer>
+    <footer class="footer">
+        <div class="wrap-contact">
+            <div class="wrap-title">
+                <div class="title hidden-xs hidden-sm hidden-md">
+                    <div class="cl-effect-2 hidden-xs hidden-sm hidden-md">
+                        CON
+                        <span data-hover="TACT">TACT</span>
+                    </div>
+                </div>
+            </div>
+            <div class="contact">
+                <div>
+                    <img src="img/tel.png" alt=""><span>+38-093-015-19-19</span>
+                </div>
+                <div class="mail">
+                    <img src="img/mail.png" alt=""><span><a href="https://mail.ru/"> bash.broski@mail.ru</a></span>
+                </div>
+                <div class="skipe hidden-xs hidden-md">
+                    <img src="img/skipe.png" alt=""><span>alexquery</span>
+                </div>
+                <div class="hidden-xs hidden-sm">
+                    <img src="img/github.png" alt=""><a href="https://github.com/nagana12/resume.git"><b>https://github.com/resume.git</b></a>
+                </div>
+            </div>
+        </div>
     </footer>
+    <div class="footer2">
+        <img class="footer3" src="img/mail.png" alt="">
+    </div>
     <script src="js/libs.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/classie-nav.js">
+    </script>
+    <script src="js/script-scroll.js"></script>
     <script src="js/common.js"></script>
     <script src="js/modernizr.custom.js"></script>
-    <script src="js/script.js"></script>
 </body>
 
 </html>

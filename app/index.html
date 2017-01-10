@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
+ 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>The resume</title>
-    <meta name="description" content="Demonstration site" />
-    <meta name="keywords" content="web design, styles, inspiration, pseudo-element, SVG,
- animation" />
+    <meta name="description" content="Demonstration site-resume" />
+    <meta name="keywords" content="web design, styles, inspiration, parallax, pseudo-element, SVG, flat-design, animation" />
     <meta name="author" content="Codrops" />
     <title>Document</title>
     <link rel="shortcut icon" href="../img/favicon.ico">
@@ -16,8 +15,8 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
-    <header id="top" class="preload">
+<body data-spy="scroll" data-target="#navbar">
+    <header id="top" class="header">
         <div class="wrap-header-info">
             <div class="name">
                 <span class="resume">
@@ -39,14 +38,14 @@
             </div>
         </div>
     </header>
-    <nav class="menu menu--iris">
-        <ul id="menu" class="menu__list">
-            <li class="menu__item menu__item--current"><a href="#top" class="menu__link">Title</a></li>
+    <div class="navbar">
+        <ul id="menu" class="nav">
+            <li class="active"><a href="#top" class="menu__link">Title</a></li>
             <li class="menu__item"><a href="#education" class="menu__link">Education</a></li>
             <li class="menu__item"><a href="#skills" class="menu__link">Skills</a></li>
             <li class="menu__item"><a href="#aboutme" class="menu__link">About me&<br>Contact</a></li>
         </ul>
-    </nav>
+    </div>
     <div class="wrap-info">
         <div class="wrap-columns">
             <div class="left-col">
@@ -55,12 +54,12 @@
                         <div class="title">
                             <div class="cl-effect-2 hidden-xs hidden-sm">
                                 EXP
-                                <span data-hover="ERIENCE">ERIENCE</span>
+                                <span class="exp-hov" data-hover="ERIENCE">ERIENCE</span>
                             </div>
                         </div>
                         <div class="exp-cont ">
                             <div class="outsourcing ">
-                                <div class="work-info ">
+                                <div class="work-info">
                                     <p><b>Front-end</b>
                                         <br> 09.2015 - this time</p>
                                     <hr class="out-sepor">
@@ -77,7 +76,7 @@
                                     <li>Применял ng- "c коробки" angular 1.6;</li>
                                     <li>Верстал сайт для компании http://dizaap.com/</li>
                                     <li>Вёрстка по PSD макетам и Layout. SEO-дружественный код;</li>
-                                    <li>CSS и jquery-анимация, media-queryes;</li>
+                                    <li>CSS и jquery-анимация, parallax, scroll-spy, media-queryes;</li>
                                     <li>Оптимизация, компиляция, конкатенация и минимализация рабочего кода;</li>
                                     <li>Пишу акуратный крос-браузерный, pixel-perfect, адаптивный код под размеры разных устройств;</li>
                                     <li>Photoshop: аккуратная нарезка макетов, применение спрайтов, пиксельхантинг;</li>
@@ -298,11 +297,11 @@
                             </div>
                         </div>
                         <div class="about-text">
-                            <p>Подхожу к задачам ответственно. Я пишу акуратный, адаптивный код, который будет работать на всех браузерах.</p>
+                            <p>Подхожу к задачам ответственно. Пишу акуратный, адаптивный код, который будет работать на всех браузерах.</p>
                             <p> Применяю набор в слепую на 2х языках и использую современные технологии верстки, что значительно экономит время заказчику.</p>
                             <p> Этот сайт-резюмэ я написал самостоятельно для детального ознакомления с моими навыками. В нем я использовал:
                                 <ul>
-                                    <li>java-script в рубрике skills.</li>
+                                    <li>java-script в рубрике skills, scroll-spy в nav, parallax в background и шапке.</li>
                                     <li>jquery дополняет анимацию вращения блоков, бокового меню и плавного скрола.</li>
                                     <li>css-animation в шапке, nav и частично в блоках(начало анимации и тайминги).</li>
                                     <li>Gulp собирал проэкт, и конкотенировал библиотеки.</li>
@@ -318,8 +317,7 @@
             </div>
         </div>
     </div>
-    </div>
-    <footer>
+    <footer class="footer">
         <div class="wrap-contact">
             <div class="wrap-title">
                 <div class="title hidden-xs hidden-sm hidden-md">
@@ -331,7 +329,7 @@
             </div>
             <div class="contact">
                 <div>
-                    <img src="img/tel.png" alt=""><span>+38-093-015-19-19</span>
+                    <img id="img-contact" src="img/tel.png" alt=""><span>+38-093-015-19-19</span>
                 </div>
                 <div class="mail">
                     <img src="img/mail.png" alt=""><span><a href="https://mail.ru/"> bash.broski@mail.ru</a></span>
@@ -345,6 +343,7 @@
             </div>
         </div>
     </footer>
+  
     <script src="js/libs.min.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/classie-nav.js">

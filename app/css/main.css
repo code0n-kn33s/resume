@@ -51,13 +51,13 @@ body {
   -o-transition: all 0s linear; }
 
 /* ПОЕХАЛИ */
-nav {
+.navbar {
   position: fixed;
   left: 10px;
-  top: 24%;
+  top: 30%;
   font-family: lato; }
 
-.menu__list {
+.nav-tabs {
   padding: 0;
   list-style: none; }
 
@@ -71,31 +71,32 @@ nav {
   outline: none;
   text-decoration: none; }
 
-.menu--iris .menu__item {
+.navbar .menu__item {
   margin: 0 1em; }
 
-.menu--iris .menu__link {
+.navbar .menu__link {
   position: relative;
   text-align: center;
   color: #b5b5b5;
   -webkit-transition: color 0.3s;
   transition: color 0.3s; }
 
-.menu--iris .menu__link:hover,
-.menu--iris .menu__link:focus {
-  color: #929292; }
+.navbar .menu__link:hover,
+.navbar .menu__link:focus {
+  color: #929292;
+  background: none; }
 
-.menu--iris .menu__item--current .menu__link {
-  color: black; }
+.navbar .active .menu__link {
+  color: #006C90; }
 
-.menu--iris .menu__link::before,
-.menu--iris .menu__link::after {
+.navbar .menu__link::before,
+.navbar .menu__link::after {
   content: '';
   position: absolute;
   width: 10px;
   height: 10px;
   opacity: 0;
-  border: 2px solid #FED300;
+  border: 2px solid #FED200;
   -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
   -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
   transition: opacity 0.3s, -webkit-transform 0.3s;
@@ -104,29 +105,29 @@ nav {
   -webkit-transition-timing-function: cubic-bezier(0.17, 0.67, 0.05, 1.29);
   transition-timing-function: cubic-bezier(0.17, 0.67, 0.05, 1.29); }
 
-.menu--iris .menu__link::before {
+.navbar .menu__link::before {
   top: 0;
   left: 0;
   border-width: 2px 0 0 2px;
   -webkit-transform: translate3d(10px, 10px, 0);
   transform: translate3d(10px, 10px, 0); }
 
-.menu--iris .menu__link::after {
+.navbar .menu__link::after {
   right: 0;
   bottom: 0;
   border-width: 0 2px 2px 0;
   -webkit-transform: translate3d(-10px, -10px, 0);
   transform: translate3d(-10px, -10px, 0); }
 
-.menu--iris .menu__item--current .menu__link::before,
-.menu--iris .menu__item--current .menu__link::after {
+.navbar .active .menu__link::before,
+.navbar .active .menu__link::after {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
 
 .cl-effect-2 span {
   position: relative;
-  background: #FED300;
+  background: #FED200;
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
@@ -143,7 +144,7 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #FED300;
+  background: #FED200;
   content: attr(data-hover);
   -webkit-transform: rotateX(-90deg);
   transform: rotateX(-90deg);
@@ -158,7 +159,7 @@ nav {
 
 .cl-effect-2 span:hover span::before,
 .cl-effect-2 span:focus span::before {
-  background: #FED300; }
+  background: #FED200; }
 
 @font-face {
   font-family: bebasneue;
@@ -235,15 +236,15 @@ nav {
 header {
   text-align: center;
   background: url(../img/head4.png) repeat;
+  margin: 0px -130px 0px -130px;
+  padding: 0px 0px 0px 0px;
   height: 180px;
-  margin: -50px -130px 0px -130px;
   border-bottom: 2px solid #eeeeee; }
 
 .wrap-header-info {
-  width: 48%;
   height: inherit;
   margin: auto;
-  background: rgba(255, 255, 230, 0.4); }
+  padding-top: 45px; }
 
 a {
   color: #006C90;
@@ -255,8 +256,7 @@ hr {
 
 .name {
   text-align: center;
-  font-family: bebasneue;
-  padding-top: 80px; }
+  font-family: bebasneue; }
   .name h1 {
     font-weight: bold;
     margin: 0px 0 0 0;
@@ -272,8 +272,8 @@ hr {
 
 .lines {
   display: inline-block;
-  border-top: 2px solid #FED300;
-  border-bottom: 2px solid #FED300;
+  border-top: 2px solid #FED200;
+  border-bottom: 2px solid #FED200;
   width: 110px;
   position: relative;
   height: 25px;
@@ -284,9 +284,9 @@ hr {
 
 .tel {
   z-index: 11;
-  margin-top: -25px;
+  margin-top: 25px;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 20px;
   -webkit-animation: tel 2s ease-out forwards;
           animation: tel 2s ease-out forwards; }
 
@@ -295,13 +295,13 @@ hr {
 
 @-webkit-keyframes tel {
   100% {
-    -webkit-transform: translate(0, 25px);
-            transform: translate(0, 25px); } }
+    -webkit-transform: translate(0, -25px);
+            transform: translate(0, -25px); } }
 
 @keyframes tel {
   100% {
-    -webkit-transform: translate(0, 25px);
-            transform: translate(0, 25px); } }
+    -webkit-transform: translate(0, -25px);
+            transform: translate(0, -25px); } }
 
 .resume {
   color: black;
@@ -519,18 +519,15 @@ hr {
 
 .title {
   display: inline-block;
-  float: left; }
+  float: left;
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7); }
 
 .wrap-info {
   display: inline-block;
   border-bottom: 1px solid white;
-  background: rgba(255, 255, 230, 0.2); }
-
-.wrap-columns {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0px 0 15px 0;
-  margin: 20px 0 10px 0; }
+  background: rgba(255, 255, 230, 0.1);
+  padding: 20px 5px 15px 0;
+  margin: 0px 0 10px 0; }
 
 .left-col {
   display: inline-block;
@@ -579,12 +576,12 @@ hr {
   text-align: justify;
   padding: 0 50px 0 30px;
   list-style-type: none;
-  font-size: 15px;
+  font-size: 16px;
   font-family: aq; }
 
 .respons li:before {
   content: "➤";
-  color: #FED300;
+  color: #FED200;
   padding-right: 20px;
   /* Добавляем в качестве маркера символ */ }
 
@@ -678,18 +675,18 @@ hr {
   margin-top: 20px; }
 
 .skills {
-  margin: 0px 0 20px 200px; }
+  margin: 0px 0 20px 210px; }
   .skills li {
     height: 20px;
     width: 338px;
-    border: 1px solid #FED300;
+    border: 1px solid #FED200;
     list-style-type: none;
     margin-bottom: 5px; }
     .skills li div {
       font-family: aleks;
       height: 100%;
       width: 0;
-      background: #FED300;
+      background: #FED200;
       padding-left: 35px;
       color: #454141;
       -webkit-transition: width 5s;
@@ -702,7 +699,8 @@ hr {
 .about-text {
   display: inline-block;
   padding: 10px 0 0 10px;
-  font-family: aleks; }
+  font-family: aq;
+  font-size: 16px; }
   .about-text p {
     padding: 0px 30px 0 70px; }
   .about-text ul {
@@ -727,15 +725,14 @@ footer {
   width: 80%; }
   .contact div {
     height: 70px;
-    background-color: #FED300;
+    background-color: #FED200;
     float: left;
     color: #454141;
     font-weight: bold;
     margin-left: 3%;
-    padding-top: 10px 5px 0 0;
+    padding: 10px 5px 0 0;
     font-family: lato;
-    text-align: left;
-    padding-right: 10px; }
+    text-align: left; }
     .contact div img {
       height: 45px;
       width: 45px;
@@ -762,3 +759,11 @@ footer {
 @media (max-width: 793px) {
   .skipe {
     display: none; } }
+
+.footer2 {
+  height: 900px; }
+
+.footer3 {
+  height: 100px;
+  width: 100px;
+  margin: 200px; }

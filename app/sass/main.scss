@@ -1,20 +1,25 @@
 @import "modules";
 @import "fonts";
-$orange: #FED300;
+$orange: #FED200;
 $blue: #006C90;
+$color-1: #0f594d; // Eden
+$color-2: #93a748; // Sushi
+$color-3: #f2e6cd; // Janna
+$color-4: #db9537; // Brandy Punch
+$color-5: #bf5138; // Mojo
 header {
     text-align: center;
     background: url(../img/head4.png) repeat;
+    margin: 0px -130px 0px -130px;
+    padding: 0px 0px 0px 0px;
     height: 180px;
-    margin: -50px -130px 0px -130px;
     border-bottom: 2px solid #eeeeee;
 }
 
 .wrap-header-info {
-    width: 48%;
     height: inherit;
     margin: auto;
-    background: rgba(299, 299, 230, 0.4);
+    padding-top: 45px;
 }
 
 a {
@@ -30,7 +35,6 @@ hr {
 .name {
     text-align: center;
     font-family: bebasneue;
-    padding-top: 80px;
     h1 {
         font-weight: bold;
         margin: 0px 0 0 0;
@@ -58,9 +62,9 @@ hr {
 
 .tel {
     z-index: 11;
-    margin-top: -25px;
+    margin-top: 25px;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 20px;
     animation: tel 2s ease-out forwards;
 }
 
@@ -69,8 +73,9 @@ hr {
 }
 
 @keyframes tel {
+  
     100% {
-        transform: translate(0, 25px)
+        transform: translate(0, -25px)
     }
 }
 
@@ -235,19 +240,16 @@ hr {
 .title {
     display: inline-block;
     float: left;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
 }
 
 //COLUMNS
 .wrap-info {
     display: inline-block;
     border-bottom: 1px solid white;
-    background: rgba(299, 299, 230, 0.2);
-}
-
-.wrap-columns {
-    box-sizing: border-box;
-    padding: 0px 0 15px 0;
-    margin: 20px 0 10px 0;
+    background: rgba(299, 299, 230, 0.1);
+    padding: 20px 5px 15px 0;
+    margin: 0px 0 10px 0;
 }
 
 .left-col {
@@ -308,7 +310,7 @@ hr {
         text-align: justify;
         padding: 0 50px 0 30px;
         list-style-type: none;
-        font-size: 15px;
+        font-size: 16px;
         font-family: aq;
     }
     li:before {
@@ -425,7 +427,7 @@ hr {
 }
 
 .skills {
-    margin: 0px 0 20px 200px;
+    margin: 0px 0 20px 210px;
     li {
         height: 20px;
         width: 338px;
@@ -453,7 +455,8 @@ hr {
 .about-text {
     display: inline-block;
     padding: 10px 0 0 10px;
-    font-family: aleks;
+    font-family: aq;
+    font-size: 16px;
     p {
         padding: 0px 30px 0 70px;
     }
@@ -490,10 +493,9 @@ footer {
         color: #454141;
         font-weight: bold;
         margin-left: 3%;
-        padding-top: 10px 5px 0 0;
+        padding: 10px 5px 0 0;
         font-family: lato;
         text-align: left;
-        padding-right: 10px;
         img {
             height: 45px;
             width: 45px;
@@ -532,4 +534,14 @@ footer {
     .skipe {
         display: none;
     }
+}
+
+.footer2 {
+    height: 900px;
+}
+
+.footer3 {
+    height: 100px;
+    width: 100px;
+    margin: 200px;
 }

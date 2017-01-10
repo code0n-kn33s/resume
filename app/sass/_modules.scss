@@ -1,6 +1,7 @@
 /*Глобальные стили*/
 
-$orange: #FED300;
+$orange: #FED200;
+$blue: #006C90;
 *,
 :before,
 :after {
@@ -74,14 +75,14 @@ body {
 /* ПОЕХАЛИ */
 
 // nav styles
-nav {
+.navbar {
     position: fixed;
     left: 10px;
-    top: 24%;
+    top: 30%;
     font-family: lato;
 }
 
-.menu__list {
+.nav-tabs {
     padding: 0;
     list-style: none;
 }
@@ -98,12 +99,11 @@ nav {
     text-decoration: none;
 }
 
-//styles nav animation
-.menu--iris .menu__item {
+.navbar .menu__item {
     margin: 0 1em;
 }
 
-.menu--iris .menu__link {
+.navbar .menu__link {
     position: relative;
     text-align: center;
     color: #b5b5b5;
@@ -111,17 +111,18 @@ nav {
     transition: color 0.3s;
 }
 
-.menu--iris .menu__link:hover,
-.menu--iris .menu__link:focus {
+.navbar .menu__link:hover,
+.navbar .menu__link:focus {
     color: #929292;
+    background: none;
 }
 
-.menu--iris .menu__item--current .menu__link {
-    color: black;
+.navbar .active .menu__link {
+    color: $blue;
 }
 
-.menu--iris .menu__link::before,
-.menu--iris .menu__link::after {
+.navbar .menu__link::before,
+.navbar .menu__link::after {
     content: '';
     position: absolute;
     width: 10px;
@@ -134,7 +135,7 @@ nav {
     transition-timing-function: cubic-bezier(0.17, 0.67, 0.05, 1.29);
 }
 
-.menu--iris .menu__link::before {
+.navbar .menu__link::before {
     top: 0;
     left: 0;
     border-width: 2px 0 0 2px;
@@ -142,7 +143,7 @@ nav {
     transform: translate3d(10px, 10px, 0);
 }
 
-.menu--iris .menu__link::after {
+.navbar .menu__link::after {
     right: 0;
     bottom: 0;
     border-width: 0 2px 2px 0;
@@ -150,8 +151,8 @@ nav {
     transform: translate3d(-10px, -10px, 0);
 }
 
-.menu--iris .menu__item--current .menu__link::before,
-.menu--iris .menu__item--current .menu__link::after {
+.navbar .active .menu__link::before,
+.navbar .active .menu__link::after {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
@@ -200,3 +201,4 @@ nav {
 }
 
 //end orange block turn
+//scroll menu
