@@ -1,48 +1,48 @@
 /*Глобальные стили*/
 
-$orange: #FED200;
-$blue: #006C90;
+$orange: #fed200;
+$blue: #006c90;
 *,
 :before,
 :after {
+    font: inherit;
+
     box-sizing: border-box;
-    -webkit-user-select: none;
-    -moz-user-select: none;
     margin: 0;
     padding: 0;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+
     border: 0;
-    font: inherit
 }
 
 body {
-    // background
-    background-image: -webkit-linear-gradient(top, #EBEBEB 0%, #DCDDDF 48%, #C4C5C7 99%);
-    background-image: linear-gradient(-180deg, #EBEBEB 0%, #DCDDDF 48%, #C4C5C7 99%);
-    // end background
-    margin: 0px 130px 20px 130px;
-    padding: 0;
-    height: 100%;
     font-family: bebasneue lato fontawesome aq aleks;
+
+       box-sizing: border-box;
+    height: 100%;
+    // end background
+    margin: 0 130px 20px 130px;
+    padding: 0;
+    // background
+
+    background-image: -webkit-linear-gradient(top, #ebebeb 0%, #dcdddf 48%, #c4c5c7 99%);
+    background-image:         linear-gradient(-180deg, #ebebeb 0%, #dcdddf 48%, #c4c5c7 99%);
+
     -o-box-sizing: border-box;
-    box-sizing: border-box;
 }
 
 
 /* вставка для imput, для заполнения пустых полей */
-
-body input:focus:required:invalid,
-body textarea:focus:required:invalid {}
-
-body input:required:invalid,
-body textarea:required:invalid {}
 
 
 /* отмена выделения */
 
 body {
     -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
 }
 
 
@@ -54,21 +54,21 @@ body {
 }
 
 
-/* чтоб анимация загружалась равномерно 
+/* чтоб анимация загружалась равномерно
 после загрузки страницы */
 
 .preload * {
     -webkit-transition: none !important;
-    -moz-transition: none !important;
-    -ms-transition: none !important;
-    -o-transition: none !important;
+       -moz-transition: none !important;
+        -ms-transition: none !important;
+         -o-transition: none !important;
 }
 
 .preload * {
     -webkit-transition: all 0s linear;
-    -moz-transition: all 0s linear;
-    -ms-transition: all 0s linear;
-    -o-transition: all 0s linear;
+       -moz-transition: all 0s linear;
+        -ms-transition: all 0s linear;
+         -o-transition: all 0s linear;
 }
 
 
@@ -76,27 +76,32 @@ body {
 
 // nav styles
 .navbar {
-    position: fixed;
-    left: 10px;
-    top: 30%;
     font-family: lato;
+
+    position: fixed;
+    top: 30%;
+    left: 10px;
 }
 
 .nav-tabs {
     padding: 0;
+
     list-style: none;
 }
 
 .menu__link {
     display: block;
+
     padding: 1em;
+
     cursor: pointer;
 }
 
 .menu__link:hover,
 .menu__link:focus {
-    outline: none;
     text-decoration: none;
+
+    outline: none;
 }
 
 .navbar .menu__item {
@@ -105,10 +110,12 @@ body {
 
 .navbar .menu__link {
     position: relative;
+
+    -webkit-transition: color .3s;
+            transition: color .3s;
     text-align: center;
+
     color: #b5b5b5;
-    -webkit-transition: color 0.3s;
-    transition: color 0.3s;
 }
 
 .navbar .menu__link:hover,
@@ -123,55 +130,66 @@ body {
 
 .navbar .menu__link::before,
 .navbar .menu__link::after {
-    content: '';
     position: absolute;
+
     width: 10px;
     height: 10px;
+
+    content: '';
+    -webkit-transition: -webkit-transform .3s, opacity .3s;
+            transition:         transform .3s, opacity .3s;
+    -webkit-transition-timing-function: cubic-bezier(.17, .67, .05, 1.29);
+            transition-timing-function: cubic-bezier(.17, .67, .05, 1.29);
+
     opacity: 0;
     border: 2px solid $orange;
-    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-    transition: transform 0.3s, opacity 0.3s;
-    -webkit-transition-timing-function: cubic-bezier(0.17, 0.67, 0.05, 1.29);
-    transition-timing-function: cubic-bezier(0.17, 0.67, 0.05, 1.29);
 }
 
 .navbar .menu__link::before {
     top: 0;
     left: 0;
-    border-width: 2px 0 0 2px;
+
     -webkit-transform: translate3d(10px, 10px, 0);
-    transform: translate3d(10px, 10px, 0);
+            transform: translate3d(10px, 10px, 0);
+
+    border-width: 2px 0 0 2px;
 }
 
 .navbar .menu__link::after {
     right: 0;
     bottom: 0;
-    border-width: 0 2px 2px 0;
+
     -webkit-transform: translate3d(-10px, -10px, 0);
-    transform: translate3d(-10px, -10px, 0);
+            transform: translate3d(-10px, -10px, 0);
+
+    border-width: 0 2px 2px 0;
 }
 
 .navbar .active .menu__link::before,
 .navbar .active .menu__link::after {
-    opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+
+    opacity: 1;
 }
 
 //end nav
 //orange block turn
 .cl-effect-2 span {
     position: relative;
-    background: $orange;
-    -webkit-transition: -webkit-transform 0.3s;
-    -moz-transition: -moz-transform 0.3s;
-    transition: transform 0.3s;
+
+    -webkit-transition: -webkit-transform .3s;
+       -moz-transition:    -moz-transform .3s;
+            transition:         transform .3s;
     -webkit-transform-origin: 50% 0;
-    -moz-transform-origin: 50% 0;
-    transform-origin: 50% 0;
+       -moz-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+
+    background: $orange;
+
     -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    transform-style: preserve-3d;
+       -moz-transform-style: preserve-3d;
+            transform-style: preserve-3d;
 }
 
 .cl-effect-2 span::before {
@@ -180,14 +198,16 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: $orange;
+
     content: attr(data-hover);
     -webkit-transform: rotateX(-90deg);
-    -moz-transform: rotateX(-90deg);
-    transform: rotateX(-90deg);
+       -moz-transform: rotateX(-90deg);
+            transform: rotateX(-90deg);
     -webkit-transform-origin: 50% 0;
-    -moz-transform-origin: 50% 0;
-    transform-origin: 50% 0;
+       -moz-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+
+    background: $orange;
 }
 
 .cl-effect-2 span:hover,
