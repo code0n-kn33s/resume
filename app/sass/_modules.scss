@@ -6,43 +6,40 @@ $blue: #006c90;
 :before,
 :after {
     font: inherit;
-
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
     -webkit-user-select: none;
-       -moz-user-select: none;
-
+    -moz-user-select: none;
     border: 0;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: bebasneue lato fontawesome aq aleks;
-
-       box-sizing: border-box;
+    position: relative;
+    z-index: 0;
+    box-sizing: border-box;
     height: 100%;
     // end background
-    margin: 0 130px 20px 130px;
+    margin: 0;
     padding: 0;
     // background
-
-    background-image: -webkit-linear-gradient(top, #ebebeb 0%, #dcdddf 48%, #c4c5c7 99%);
-    background-image:         linear-gradient(-180deg, #ebebeb 0%, #dcdddf 48%, #c4c5c7 99%);
-
     -o-box-sizing: border-box;
 }
-
-
-/* вставка для imput, для заполнения пустых полей */
 
 
 /* отмена выделения */
 
 body {
     -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 
@@ -59,16 +56,16 @@ body {
 
 .preload * {
     -webkit-transition: none !important;
-       -moz-transition: none !important;
-        -ms-transition: none !important;
-         -o-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
 }
 
 .preload * {
     -webkit-transition: all 0s linear;
-       -moz-transition: all 0s linear;
-        -ms-transition: all 0s linear;
-         -o-transition: all 0s linear;
+    -moz-transition: all 0s linear;
+    -ms-transition: all 0s linear;
+    -o-transition: all 0s linear;
 }
 
 
@@ -77,7 +74,6 @@ body {
 // nav styles
 .navbar {
     font-family: lato;
-
     position: fixed;
     top: 30%;
     left: 10px;
@@ -85,22 +81,18 @@ body {
 
 .nav-tabs {
     padding: 0;
-
     list-style: none;
 }
 
 .menu__link {
     display: block;
-
     padding: 1em;
-
     cursor: pointer;
 }
 
 .menu__link:hover,
 .menu__link:focus {
     text-decoration: none;
-
     outline: none;
 }
 
@@ -110,11 +102,9 @@ body {
 
 .navbar .menu__link {
     position: relative;
-
     -webkit-transition: color .3s;
-            transition: color .3s;
+    transition: color .3s;
     text-align: center;
-
     color: #b5b5b5;
 }
 
@@ -131,16 +121,13 @@ body {
 .navbar .menu__link::before,
 .navbar .menu__link::after {
     position: absolute;
-
     width: 10px;
     height: 10px;
-
     content: '';
     -webkit-transition: -webkit-transform .3s, opacity .3s;
-            transition:         transform .3s, opacity .3s;
+    transition: transform .3s, opacity .3s;
     -webkit-transition-timing-function: cubic-bezier(.17, .67, .05, 1.29);
-            transition-timing-function: cubic-bezier(.17, .67, .05, 1.29);
-
+    transition-timing-function: cubic-bezier(.17, .67, .05, 1.29);
     opacity: 0;
     border: 2px solid $orange;
 }
@@ -148,28 +135,23 @@ body {
 .navbar .menu__link::before {
     top: 0;
     left: 0;
-
     -webkit-transform: translate3d(10px, 10px, 0);
-            transform: translate3d(10px, 10px, 0);
-
+    transform: translate3d(10px, 10px, 0);
     border-width: 2px 0 0 2px;
 }
 
 .navbar .menu__link::after {
     right: 0;
     bottom: 0;
-
     -webkit-transform: translate3d(-10px, -10px, 0);
-            transform: translate3d(-10px, -10px, 0);
-
+    transform: translate3d(-10px, -10px, 0);
     border-width: 0 2px 2px 0;
 }
 
 .navbar .active .menu__link::before,
 .navbar .active .menu__link::after {
     -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-
+    transform: translate3d(0, 0, 0);
     opacity: 1;
 }
 
@@ -177,19 +159,16 @@ body {
 //orange block turn
 .cl-effect-2 span {
     position: relative;
-
     -webkit-transition: -webkit-transform .3s;
-       -moz-transition:    -moz-transform .3s;
-            transition:         transform .3s;
+    -moz-transition: -moz-transform .3s;
+    transition: transform .3s;
     -webkit-transform-origin: 50% 0;
-       -moz-transform-origin: 50% 0;
-            transform-origin: 50% 0;
-
+    -moz-transform-origin: 50% 0;
+    transform-origin: 50% 0;
     background: $orange;
-
     -webkit-transform-style: preserve-3d;
-       -moz-transform-style: preserve-3d;
-            transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
 }
 
 .cl-effect-2 span::before {
@@ -198,15 +177,13 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-
     content: attr(data-hover);
     -webkit-transform: rotateX(-90deg);
-       -moz-transform: rotateX(-90deg);
-            transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
     -webkit-transform-origin: 50% 0;
-       -moz-transform-origin: 50% 0;
-            transform-origin: 50% 0;
-
+    -moz-transform-origin: 50% 0;
+    transform-origin: 50% 0;
     background: $orange;
 }
 
@@ -221,4 +198,34 @@ body {
 }
 
 //end orange block turn
-//scroll menu
+@media (max-width: 1260px) {
+    .contact {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1260px) and (min-width: 1200px) {
+    /* для разрешения экрана от 470 до 930 пикселей */
+    .wrap-title {
+        display: none;
+    }
+    /* боковая колонка смещается согласно расположению в HTML и меняет фон */
+}
+
+@media (max-width: 756px) {
+    .mail {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .skills {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 793px) {
+    .skipe {
+        display: none;
+    }
+}

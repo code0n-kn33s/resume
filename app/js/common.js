@@ -117,17 +117,17 @@ $('.wrap-header-info').scroolly([{
         'opacity': '.1'
     }
 }], $('.header'));
-//hover effect title
+//effect title
 $('.title').scroolly([{
     from: 'con-top = con-top + 100px',
     to: 'con-bottom = top',
     cssFrom: { 'margin-left': '0px' },
     cssTo: { 'margin-left': '20px' }
 }, {
-    from: 'con-top = con-bottom - 100px',
-    to: 'con-bottom = top',
-    cssFrom: { 'margin-left': '0px' },
-    cssTo: { 'margin-left': '20px' }
+    from: 'con-top = con-bottom + 150px',
+    to: 'con-bottom = bottom',
+    cssFrom: { 'margin-left': '-30px' },
+    cssTo: { 'margin-left': '0px' }
 
 }]);
-
+//

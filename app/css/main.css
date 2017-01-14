@@ -12,19 +12,22 @@
   -moz-user-select: none;
   border: 0; }
 
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
 body {
   font-family: bebasneue lato fontawesome aq aleks;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  z-index: 0;
+  position: relative;
   height: 100%;
-  margin: 0 130px 20px 130px;
+  margin: 0;
   padding: 0;
-  background-image: -webkit-linear-gradient(top, #ebebeb 0%, #dcdddf 48%, #c4c5c7 99%);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ebebeb), color-stop(48%, #dcdddf), color-stop(99%, #c4c5c7));
-  background-image: linear-gradient(-180deg, #ebebeb 0%, #dcdddf 48%, #c4c5c7 99%);
   -o-box-sizing: border-box; }
 
-/* вставка для imput, для заполнения пустых полей */
 /* отмена выделения */
 body {
   -webkit-user-select: none;
@@ -161,6 +164,28 @@ body {
 .cl-effect-2 span:focus span::before {
   background: #fed200; }
 
+@media (max-width: 1260px) {
+  .contact {
+    width: 100%; } }
+
+@media (max-width: 1260px) and (min-width: 1200px) {
+  /* для разрешения экрана от 470 до 930 пикселей */
+  .wrap-title {
+    display: none; }
+  /* боковая колонка смещается согласно расположению в HTML и меняет фон */ }
+
+@media (max-width: 756px) {
+  .mail {
+    display: none; } }
+
+@media (max-width: 768px) {
+  .skills {
+    margin-left: 10px; } }
+
+@media (max-width: 793px) {
+  .skipe {
+    display: none; } }
+
 @font-face {
   font-family: bebasneue;
   src: url(../fonts/BebasNeue-Regular.ttf);
@@ -235,7 +260,6 @@ body {
 
 header {
   height: 180px;
-  margin: 0 -130px 0 -130px;
   padding: 0 0 0 0;
   text-align: center;
   border-bottom: 2px solid #eee;
@@ -508,7 +532,9 @@ hr {
   font-weight: 900;
   position: relative;
   display: inline-block;
-  margin: 0 0 0 35px; }
+  margin: 0 0 0 35px;
+  color: #fff;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.7); }
   .cl-effect-2 span {
     line-height: 50px;
     position: relative;
@@ -529,10 +555,18 @@ hr {
 /*COLUMNS*/
 .wrap-info {
   display: inline-block;
-  margin: 0 0 10px 0;
-  padding: 20px 5px 15px 0;
+  position: relative;
+  z-index: 10;
+  margin: 0;
+  padding: 0;
   border-bottom: 1px solid white;
-  background: rgba(255, 255, 230, 0.1); }
+  background-image: -webkit-linear-gradient(top, #ebebeb 0%, #dcdddf 48%, #c4c5c7 99%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ebebeb), color-stop(48%, #dcdddf), color-stop(99%, #c4c5c7));
+  background-image: linear-gradient(-180deg, #ebebeb 0%, #dcdddf 48%, #c4c5c7 99%); }
+
+.wrap-columns {
+  display: inline-block;
+  margin: 10px 0px 0px 130px; }
 
 .left-col {
   display: inline-block;
@@ -715,66 +749,55 @@ hr {
     padding: 0 30px 0 70px; }
   .about-text ul {
     margin-left: 100px; }
+    .about-text ul li {
+      font-family: aq;
+      font-size: 16px;
+      list-style-type: none;
+      text-align: justify; }
+    .about-text ul li:before {
+      padding-right: 20px;
+      content: '➤';
+      color: #fed200;
+      /* Добавляем в качестве маркера символ */ }
 
 /*CONTACT*/
 footer {
   display: inline-block;
+  position: relative;
+  z-index: -2;
   width: 100%;
-  margin: 30px 0 20px 0; }
+  height: 140px;
+  padding: 0;
+  margin: 0 0 -7px 0;
+  background-color: #C6C7C9; }
 
 .wrap-contact {
+  position: fixed;
+  bottom: 0px;
+  height: 140px;
+  z-index: -1;
   display: inherit;
-  width: inherit; }
+  width: inherit;
+  padding: 31px 0 31px 120px;
+  background: url(../img/bg-footer.png); }
 
 .wrap-title {
   display: inherit;
-  float: left;
-  width: 20%; }
+  float: left; }
 
 .contact {
-  display: inherit;
-  width: 80%; }
+  display: inherit; }
   .contact div {
     font-family: lato;
     font-weight: bold;
     float: left;
     height: 70px;
     margin-left: 3%;
-    padding: 10px 5px 0 0;
     text-align: left;
     color: #454141;
-    background-color: #fed200; }
+    padding: 10px 15px 0 0;
+    background-color: rgba(254, 210, 0, 0.8); }
     .contact div img {
       width: 45px;
       height: 45px;
       margin: 0 10px 0 -15px; }
-
-@media (max-width: 1260px) {
-  .contact {
-    width: 100%; } }
-
-@media (max-width: 1260px) and (min-width: 1200px) {
-  /* для разрешения экрана от 470 до 930 пикселей */
-  .wrap-title {
-    display: none; }
-  /* боковая колонка смещается согласно расположению в HTML и меняет фон */ }
-
-@media (max-width: 756px) {
-  .mail {
-    display: none; } }
-
-@media (max-width: 768px) {
-  .skills {
-    margin-left: 10px; } }
-
-@media (max-width: 793px) {
-  .skipe {
-    display: none; } }
-
-.footer2 {
-  height: 900px; }
-
-.footer3 {
-  width: 100px;
-  height: 100px;
-  margin: 200px; }
