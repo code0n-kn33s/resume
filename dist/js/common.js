@@ -117,17 +117,35 @@ $('.wrap-header-info').scroolly([{
         'opacity': '.1'
     }
 }], $('.header'));
-//hover effect title
+//effect title
 $('.title').scroolly([{
     from: 'con-top = con-top + 100px',
     to: 'con-bottom = top',
     cssFrom: { 'margin-left': '0px' },
     cssTo: { 'margin-left': '20px' }
 }, {
-    from: 'con-top = con-bottom - 100px',
-    to: 'con-bottom = top',
-    cssFrom: { 'margin-left': '0px' },
-    cssTo: { 'margin-left': '20px' }
+    from: 'con-top = con-bottom + 150px',
+    to: 'con-bottom = bottom',
+    cssFrom: { 'margin-left': '-30px' },
+    cssTo: { 'margin-left': '0px' }
 
 }]);
+//parallax bg
+(function() {
 
+    var parallax = document.querySelectorAll(".parallax"),
+        speed = 0.5;
+
+    window.onscroll = function() {
+        [].slice.call(parallax).forEach(function(el, i) {
+
+            var windowYOffset = window.pageYOffset,
+                elBackgrounPos = "0%" + (windowYOffset * speed) + "px";
+
+            el.style.backgroundPosition = elBackgrounPos;
+
+        });
+    };
+
+})();
+//

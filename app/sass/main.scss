@@ -2,12 +2,13 @@ $orange: #fed200;
 $blue: #006c90;
 @import 'modules';
 @import 'fonts';
+@import 'tour';
 header {
     height: 180px;
     padding: 0 0 0 0;
     text-align: center;
     border-bottom: 2px solid #eee;
-    background: url(../img/head4.png) repeat;
+    background: url(../img/header.png) repeat;
 }
 
 .wrap-header-info {
@@ -615,11 +616,23 @@ hr {
     margin: 20px 0 0 0;
 }
 
+.about-me {
+    img {
+        height: 200px;
+        float: right;
+        margin-right: 55px;
+    }
+}
+
+.title-aboutme {
+    float: left;
+    margin-right: 20px;
+}
+
 .about-text {
     font-family: aq;
     font-size: 16px;
-    display: inline-block;
-    padding: 10px 0 0 10px;
+    padding: 0px 0 0px 0px;
     p {
         padding: 0 30px 0 70px;
     }
@@ -638,6 +651,10 @@ hr {
             /* Добавляем в качестве маркера символ */
         }
     }
+}
+
+.input-eng {
+    height: 70px;
 }
 
 
@@ -688,4 +705,35 @@ footer {
             margin: 0 10px 0 -15px;
         }
     }
+}
+
+//background
+.wrap-carousel {
+    background: url(../img/bg-1-1.png) no-repeat;
+}
+
+.module {
+    margin-top: -70px;
+    margin-left: -80px;
+    position: absolute;
+    height: 600px;
+    width: 500px;
+    z-index: -1;
+}
+
+div.module.parallax-1 {
+    background: url(../img/bg-2-1.png) no-repeat;
+}
+
+.module2 {
+    margin-top: -80px;
+    margin-left: -75px;
+    height: 650px;
+    width: 250px;
+    position: absolute;
+    z-index: -1;
+}
+
+div.module2.parallax-2 {
+    background: url(../img/bg-2-2.png) no-repeat;
 }
