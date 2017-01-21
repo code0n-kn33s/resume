@@ -460,7 +460,8 @@ hr {
     }
 }
 
-.respons {
+.respons,
+.scope-of-work {
     li {
         font-family: aq;
         font-size: 16px;
@@ -470,7 +471,7 @@ hr {
     }
     li:before {
         padding-right: 20px;
-        content: '➤';
+        content: '➢';
         color: $orange;
         /* Добавляем в качестве маркера символ */
     }
@@ -638,18 +639,6 @@ hr {
     }
     ul {
         margin-left: 100px;
-        li {
-            font-family: aq;
-            font-size: 16px;
-            list-style-type: none;
-            text-align: justify;
-        }
-        li:before {
-            padding-right: 20px;
-            content: '➤';
-            color: $orange;
-            /* Добавляем в качестве маркера символ */
-        }
     }
 }
 
@@ -663,7 +652,6 @@ hr {
 footer {
     position: relative;
     z-index: -2;
-    display: inline-block;
     width: 100%;
     height: 140px;
     margin: 0 0 -7px 0;
@@ -673,8 +661,8 @@ footer {
 
 .wrap-contact {
     position: fixed;
-    z-index: -1;
     bottom: 0;
+    z-index: -1;
     display: inherit;
     width: inherit;
     height: 140px;
@@ -694,8 +682,8 @@ footer {
         font-weight: bold;
         float: left;
         height: 70px;
-        margin-left: 3%;
-        padding: 10px 15px 0 0;
+        margin-left: 2%;
+        padding: 15px 15px 0 0;
         text-align: left;
         color: #454141;
         background-color: rgba(254, 210, 0, .8);
@@ -707,33 +695,15 @@ footer {
     }
 }
 
-//background
-.wrap-carousel {
-    background: url(../img/bg-1-1.png) no-repeat;
+.mail {
+    padding: 0px 0 0 0 !important;
+    margin: 0;
 }
 
-.module {
-    margin-top: -70px;
-    margin-left: -80px;
+.but-copy {
     position: absolute;
-    height: 600px;
-    width: 500px;
-    z-index: -1;
-}
-
-div.module.parallax-1 {
-    background: url(../img/bg-2-1.png) no-repeat;
-}
-
-.module2 {
-    margin-top: -80px;
-    margin-left: -75px;
-    height: 650px;
-    width: 250px;
-    position: absolute;
-    z-index: -1;
-}
-
-div.module2.parallax-2 {
-    background: url(../img/bg-2-2.png) no-repeat;
+    height: 30px;
+    width: 100px;
+    margin-bottom: 2%;
+    margin-left: 10%;
 }
