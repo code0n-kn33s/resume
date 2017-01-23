@@ -1,7 +1,5 @@
-/*Глобальные стили*/
-
 $orange: #fed200;
-$blue: #006c90;
+$blue: #7986CB;
 *,
 :before,
 :after {
@@ -50,6 +48,9 @@ body {
     position: fixed;
     top: 30%;
     left: 10px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #235287 !important;
 }
 
 .nav-tabs {
@@ -236,20 +237,20 @@ div.module2.parallax-2 {
 
 // copy button
 .btn {
-    border: none;
+    height: 70px;
+    width: 100px;
+    border: none !important;
     font-family: bebasneue;
     font-weight: 400;
     font-size: 20px;
     color: inherit;
     cursor: pointer;
-    height: 70px;
     padding: 21px 10 px;
     display: inline-block;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
     outline: none;
-    position: relative;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
@@ -286,7 +287,7 @@ div.module2.parallax-2 {
 }
 
 .btn-8g {
-    background: #7aca7c;
+    background: #7986cb;
     color: #fff;
 }
 
@@ -305,8 +306,7 @@ div.module2.parallax-2 {
 
 .btn-8g:after {
     top: -98%;
-    /* should be -100% but there's a gap in Chrome Version 34.0.1847.131 */
-    background: #057193;
+    background: #7aca7c;
     color: #fff;
     content: 'DONE! ✓';
     -webkit-transform-origin: 0% 100%;
@@ -329,4 +329,349 @@ div.module2.parallax-2 {
     -ms-transform: rotateX(-90deg) translateY(100%);
     transform-origin: 50% 100%;
     transform: rotateX(-90deg) translateY(100%);
+}
+
+//tree backgr
+.the-background {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    opacity: 0.3;
+    margin-top: 150px;
+    margin-left: -173px;
+}
+
+.tree {
+    background-color: rgba(109, 120, 18, 1);
+    width: 72px;
+    height: 72px;
+    -webkit-border-radius: 0px 31px 34px 33px;
+    -o-border-radius: 0px 31px 34px 33px;
+    -moz-border-radius: 0px 31px 34px 33px;
+    border-radius: 0px 31px 34px 33px;
+    position: absolute;
+    left: 21%;
+    top: 18%;
+    -webkit-box-shadow: -39px 41px 0 -8px rgba(219, 42, 132, 1), -40px 94px 0 -14px #dca41d, 92px -11px 0 -11px rgba(183, 181, 34, 0.9), 74px 24px 0 -8px #dca41d, -51px 0px 0px -27px rgba(242, 182, 34, 1), 16px -50px 0 -25px rgba(219, 42, 132, 1), 140px -43px 0 -20px rgba(219, 42, 132, 1);
+    -moz-box-shadow: -39px 41px 0 -8px rgba(219, 42, 132, 1), -40px 94px 0 -14px #dca41d, 92px -11px 0 -11px rgba(183, 181, 34, 0.9), 74px 24px 0 -8px #dca41d, -51px 0px 0px -27px rgba(242, 182, 34, 1), 16px -50px 0 -25px rgba(219, 42, 132, 1), 140px -43px 0 -20px rgba(219, 42, 132, 1);
+    -o-box-shadow: -39px 41px 0 -8px rgba(219, 42, 132, 1), -40px 94px 0 -14px #dca41d, 92px -11px 0 -11px rgba(183, 181, 34, 0.9), 74px 24px 0 -8px #dca41d, -51px 0px 0px -27px rgba(242, 182, 34, 1), 16px -50px 0 -25px rgba(219, 42, 132, 1), 140px -43px 0 -20px rgba(219, 42, 132, 1);
+    box-shadow: -39px 41px 0 -8px rgba(219, 42, 132, 1), -40px 94px 0 -14px #dca41d, 92px -11px 0 -11px rgba(183, 181, 34, 0.9), 74px 24px 0 -8px #dca41d, -51px 0px 0px -27px rgba(242, 182, 34, 1), 16px -50px 0 -25px rgba(219, 42, 132, 1), 140px -43px 0 -20px rgba(219, 42, 132, 1);
+    z-index: 3;
+}
+
+.the-background .tree:before {
+    content: "";
+    background-color: #b7b522;
+    width: 31px;
+    height: 31px;
+    -webkit-border-radius: 13px 0px 13px 13px;
+    -o-border-radius: 13px 0px 13px 13px;
+    -moz-border-radius: 13px 0px 13px 13px;
+    border-radius: 13px 0px 13px 13px;
+    position: absolute;
+    left: 280%;
+    top: 62%;
+    -webkit-box-shadow: -28px 51px 0 17px rgba(219, 42, 132, 0.8), -4px 89px 0px -6px rgba(0, 156, 213, 1), -20px -42px 0px 9px rgba(0, 156, 213, 0.8), -28px 10px 0px -9px #f2b622, -149px -60px 0px 3px rgba(183, 181, 34, 0.9);
+    -o-box-shadow: -28px 51px 0 17px rgba(219, 42, 132, 0.8), -4px 89px 0px -6px rgba(0, 156, 213, 1), -20px -42px 0px 9px rgba(0, 156, 213, 0.8), -28px 10px 0px -9px #f2b622, -149px -60px 0px 3px rgba(183, 181, 34, 0.9);
+    -moz-box-shadow: -28px 51px 0 17px rgba(219, 42, 132, 0.8), -4px 89px 0px -6px rgba(0, 156, 213, 1), -20px -42px 0px 9px rgba(0, 156, 213, 0.8), -28px 10px 0px -9px #f2b622, -149px -60px 0px 3px rgba(183, 181, 34, 0.9);
+    box-shadow: -28px 51px 0 17px rgba(219, 42, 132, 0.8), -4px 89px 0px -6px rgba(0, 156, 213, 1), -20px -42px 0px 9px rgba(0, 156, 213, 0.8), -28px 10px 0px -9px #f2b622, -149px -60px 0px 3px rgba(183, 181, 34, 0.9);
+    z-index: 2;
+}
+
+.tree:after {
+    content: "";
+    background-color: rgba(0, 156, 213, 0.8);
+    position: absolute;
+    left: 152%;
+    top: 96%;
+    width: 30px;
+    height: 30px;
+    -webkit-border-radius: 28px 28px 0px 28px;
+    -o-border-radius: 28px 28px 0px 28px;
+    -moz-border-radius: 28px 28px 0px 28px;
+    border-radius: 28px 28px 0px 28px;
+    -webkit-box-shadow: 53px 69px 0 8px rgba(109, 120, 18, 0.8);
+    -o-box-shadow: 53px 69px 0 8px rgba(109, 120, 18, 0.8);
+    -moz-box-shadow: 53px 69px 0 8px rgba(109, 120, 18, 0.8);
+    box-shadow: 53px 69px 0 8px rgba(109, 120, 18, 0.8);
+    z-index: 2;
+}
+
+.storck {
+    width: 14px;
+    height: 148px;
+    position: absolute;
+    top: 58%;
+    -webkit-box-shadow: 26px 0 0 0 #695846, 13px 0 0 0 #7d6d56;
+    -o-box-shadow: 26px 0 0 0 #695846, 13px 0 0 0 #7d6d56;
+    -moz-box-shadow: 26px 0 0 0 #695846, 13px 0 0 0 #7d6d56;
+    box-shadow: 26px 0 0 0 #695846, 13px 0 0 0 #7d6d56;
+    left: 43.5%;
+    background-color: #695846;
+}
+
+.circle {
+    width: 14px;
+    height: 14px;
+    -o-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-color: white;
+    top: 56%;
+    left: 43.5%;
+    position: absolute;
+    -webkit-box-shadow: 13px 0px 0px 0px white, 26px 0px 0px 0px white;
+    -o-box-shadow: 13px 0px 0px 0px white, 26px 0px 0px 0px white;
+    -moz-box-shadow: 13px 0px 0px 0px white, 26px 0px 0px 0px white;
+    box-shadow: 13px 0px 0px 0px white, 26px 0px 0px 0px white;
+}
+
+.circle:before {
+    content: "";
+    width: 0px;
+    position: absolute;
+    border-bottom: 34px solid white;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    height: 0px;
+    top: -205%;
+}
+
+.circle:after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-bottom: 14px solid #695846;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    top: -206%;
+    left: 85%;
+}
+
+.brown {
+    opacity: 1;
+    width: 6.5px;
+    height: 98px;
+    position: absolute;
+    background-color: #695846;
+    -moz-border-radius: 84px 118px;
+    -webkit-border-radius: 84px 118px;
+    -o-border-radius: 84px 118px;
+    border-radius: 84px 118px;
+    z-index: 1;
+    -o-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 53%;
+    left: 36.5%;
+}
+
+.brown:after {
+    width: 6.5px;
+    height: 30px;
+    content: "";
+    position: absolute;
+    background-color: #695846;
+    -o-border-radius: 116px 118px;
+    -moz-border-radius: 116px 118px;
+    -webkit-border-radius: 116px 118px;
+    border-radius: 116px 118px;
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+    top: -47%;
+    left: 310.5%;
+    -webkit-box-shadow: 49.5px 5px 0px 0px #695846, 17px 37px 0px 0px #695846, 130px 65px 0px 0px #695846, 3px 77px 0px 0px #695846;
+    -o-box-shadow: 49.5px 5px 0px 0px #695846, 17px 37px 0px 0px #695846, 130px 65px 0px 0px #695846, 3px 77px 0px 0px #695846;
+    -moz-box-shadow: 49.5px 5px 0px 0px #695846, 17px 37px 0px 0px #695846, 130px 65px 0px 0px #695846, 3px 77px 0px 0px #695846;
+    box-shadow: 49.5px 5px 0px 0px #695846, 17px 37px 0px 0px #695846, 130px 65px 0px 0px #695846, 3px 77px 0px 0px #695846;
+}
+
+.brown:before {
+    width: 6.5px;
+    height: 63px;
+    content: "";
+    position: absolute;
+    background-color: #695846;
+    -webkit-border-radius: 151px 217px;
+    -o-border-radius: 151px 217px;
+    -moz-border-radius: 151px 217px;
+    border-radius: 151px 217px;
+    top: 73.5%;
+    left: 706%;
+    -o-transform: rotate(84deg);
+    -moz-transform: rotate(84deg);
+    -webkit-transform: rotate(84deg);
+    transform: rotate(84deg);
+    -o-box-shadow: -43.5px -111.5px 0px 0px #695846;
+    -webkit-box-shadow: -43.5px -111.5px 0px 0px #695846;
+    -moz-box-shadow: -43.5px -111.5px 0px 0px #695846;
+    box-shadow: -43.5px -111.5px 0px 0px #695846;
+}
+
+.delfy {
+    width: 6.5px;
+    height: 32px;
+    content: "";
+    position: absolute;
+    background-color: #695846;
+    -webkit-border-radius: 118px 88px;
+    -o-border-radius: 118px 88px;
+    -moz-border-radius: 118px 88px;
+    border-radius: 118px 88px;
+    top: 49%;
+    left: 26.9%;
+}
+
+.delfy:before {
+    content: "";
+    width: 6.5px;
+    height: 73px;
+    position: absolute;
+    -o-border-radius: 156px 218px;
+    -moz-border-radius: 156px 218px;
+    -webkit-border-radius: 156px 218px;
+    border-radius: 156px 218px;
+    top: -76%;
+    left: 1882%;
+    background-color: #695846;
+    -o-box-shadow: -83.5px -9.5px 0px 0px #695846;
+    -webkit-box-shadow: -83.5px -9.5px 0px 0px #695846;
+    -moz-box-shadow: -83.5px -9.5px 0px 0px #695846;
+    box-shadow: -83.5px -9.5px 0px 0px #695846;
+}
+
+.delfy:after {
+    content: "";
+    width: 6.5px;
+    height: 29px;
+    position: absolute;
+    -o-border-radius: 100px 100px;
+    -webkit-border-radius: 100px 100px;
+    -moz-border-radius: 100px 100px;
+    border-radius: 100px 100px;
+    top: 43%;
+    left: 2014%;
+    background-color: #695846;
+    -webkit-box-shadow: -99px 21px 0px 0px #695846;
+    -o-box-shadow: -99px 21px 0px 0px #695846;
+    -moz-box-shadow: -99px 21px 0px 0px #695846;
+    box-shadow: -99px 21px 0px 0px #695846;
+    -webkit-transform: rotate(48deg);
+    -o-transform: rotate(48deg);
+    -moz-transform: rotate(48deg);
+    transform: rotate(48deg);
+}
+
+
+/* Button styles */
+
+.button {
+    text-transform: uppercase;
+    float: left;
+    min-width: 150px;
+    max-width: 250px;
+    display: block;
+    padding: 1em 2em;
+    font-size: 20px;
+    border: none;
+    background: none;
+    letter-spacing: 1px;
+    color: inherit;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+    font-family: bebasneue;
+    -webkit-backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: bold;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.button > span {
+    vertical-align: middle;
+}
+
+
+/* Text color adjustments (we could stick to the "inherit" but that does not work well in Safari) */
+
+.button--tamaya {
+    overflow: hidden;
+    color: #000;
+    min-width: 180px;
+}
+
+.button--tamaya.button--inverted {
+    color: #37474f;
+    border-color: #37474f;
+}
+
+.button--tamaya::before,
+.button--tamaya::after {
+    content: attr(data-text);
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    left: 0;
+    background: #7986cb;
+    color: #fff;
+    overflow: hidden;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.button--tamaya.button--inverted::before,
+.button--tamaya.button--inverted::after {
+    background: #fff;
+    color: #37474f;
+}
+
+.button--tamaya::before {
+    top: 0;
+    padding-top: 1em;
+}
+
+.button--tamaya::after {
+    bottom: 0;
+    line-height: 0;
+}
+
+.button--tamaya > span {
+    display: block;
+    -webkit-transform: scale3d(0.2, 0.2, 1);
+    transform: scale3d(0.2, 0.2, 1);
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.button--tamaya:hover::before {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+}
+
+.button--tamaya:hover::after {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+
+.button--tamaya:hover > span {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+}
+
+.cd-nugget-info {
+    margin-left: 40.5%;
 }

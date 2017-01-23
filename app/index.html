@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>The resume</title>
     <meta name="description" content="Demonstration site-resume" />
-    <meta name="keywords" content="web design, styles, inspiration, parallax, pseudo-element, SVG, flat-design, animation" />
+    <meta name="keywords" content="web design, styles, inspiration, parallax, pseudo-element, animation" />
     <meta name="author" content="Codrops" />
     <title>Document</title>
     <link rel="shortcut icon" href="../img/favicon.ico">
@@ -132,7 +132,7 @@
                             <span data-hover="CATION">CATION</span>
                         </div>
                     </div>
-                    <div class="hidden-xs hidden-sm hidden-md git-hub"><span>You can see this code on </span><b>GitHub:</b>
+                    <div class="hidden-xs hidden-sm hidden-md git-hub"><b>GitHub:</b>
                         <br><a href="https://github.com/nagana12/resume.git"><b>&#10697; https://github.com/resume.git</b></a>
                     </div>
                     <div class="module2 parallax parallax-2"></div>
@@ -289,6 +289,13 @@
                         </ul>
                     </div>
                 </div>
+                <div class="the-background">
+                    <div class="tree"></div>
+                    <div class="storck"></div>
+                    <div class="circle"></div>
+                    <div class="brown"></div>
+                    <div class="delfy"></div>
+                </div>
                 <div id="aboutme" class="wrap-aboutme">
                     <div class="about-me">
                         <div class="title title-aboutme hidden-xs hidden-sm hidden-md">
@@ -316,97 +323,98 @@
                                 </ul>
                             </p>
                         </div>
-                        <div class="tour">
-                            <div class="cd-nugget-info hidden-xs hidden-sm hidden-md">
-                                <button id="cd-tour-trigger" class="cd-btn">Начать тур по сайту</button>
-                            </div>
-                            <ul class="cd-tour-wrapper">
-                                <li class="cd-single-step">
-                                    <span>Шаг 1</span>
-                                    <div class="cd-more-info right">
-                                        <h2>Header</h2>
-                                        <p>При скроле картинка плавно опускается вниз, когда текст движется вверх и изчезает</p>
-                                        <img src="img/step-1.png" alt="step 1">
-                                    </div>
-                                </li>
-                                <li class="cd-single-step">
-                                    <span>Шаг 2</span>
-                                    <div class="cd-more-info right">
-                                        <h2>Title</h2>
-                                        <p>При загрузке страницы "the resume", каждой букве задана скорость и положение.</p>
-                                        <img src="img/step-1.png" alt="step 1">
-                                    </div>
-                                </li>
-                                <!-- .cd-single-step -->
-                                <li class="cd-single-step">
-                                    <span>Шаг 3</span>
-                                    <div class="cd-more-info right">
-                                        <h2>Nav</h2>
-                                        <p>Отслеживание viewport - переключает ссылки в зависимости на каком месте находится пользователь. При переключении - плавный скрол</p>
-                                        <img src="img/step-2.png" alt="step 2">
-                                    </div>
-                                </li>
-                                <!-- .cd-single-step -->
-                                <li class="cd-single-step">
-                                    <span>Шаг 4</span>
-                                    <div class="cd-more-info right">
-                                        <h2>&lt;h2&gt;</h2>
-                                        <p>При наведении на блоки - css начинает анимацию и jquery завершает</p>
-                                        <img src="img/step-3.png" alt="step 3">
-                                    </div>
-                                </li>
-                                <li class="cd-single-step">
-                                    <span>Шаг 5</span>
-                                    <div class="cd-more-info right">
-                                        <h2>Deep <br> background</h2>
-                                        <p>При скроле фон движется медленее остальных элементов создавая parallax-еффект</p>
-                                        <img src="img/step-3.png" alt="step 3">
-                                    </div>
-                                </li>
-                                <li class="cd-single-step">
-                                    <span>Шаг 6</span>
-                                    <div class="cd-more-info left">
-                                        <h2>Skills</h2>
-                                        <p>js двигает ползунки моих навыков и отображает их уровень</p>
-                                        <img src="img/step-3.png" alt="step 3">
-                                    </div>
-                                </li>
-                                <li class="cd-single-step">
-                                    <span>Шаг 7</span>
-                                    <div class="cd-more-info left">
-                                        <h2>Site <br> tour</h2>
-                                        <p>Переключение елементов списка, навигация и стили генерятся JQuery</p>
-                                        <img src="img/step-3.png" alt="step 3">
-                                    </div>
-                                </li>
-                                <li class="cd-single-step">
-                                    <span>Шаг 8</span>
-                                    <div class="cd-more-info top">
-                                        <h2>Footer</h2>
-                                        <p>Опустите вниз, чтобы увидеть еффект.
-                                            <br>С помощью css наложения слоев и z-index появляется еффект 'шторки'.
-                                        </p>
-                                        <img src="img/step-3.png" alt="step 3">
-                                    </div>
-                                </li>
-                                <li class="cd-single-step">
-                                    <span>Шаг 9</span>
-                                    <div class="cd-more-info top">
-                                        <h2>Copy <br>button</h2>
-                                        <p>Один клик и вы легко скопируете адрес моей почты для связи.
-                                            <br>Надеюсь вам все понравилось.
-                                            <br> Спасибо!</p>
-                                        <img src="img/step-3.png" alt="step 3">
-                                    </div>
-                                </li>
-                                <!-- .cd-single-step -->
-                            </ul>
-                            <!-- .cd-tour-wrapper -->
-                            <div class="cd-app-screen"></div>
-                            <div class="cd-cover-layer"></div>
-                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="wrap-tour">
+                <div class="cd-nugget-info hidden-xs hidden-sm hidden-md">
+                    <button id="cd-tour-trigger" class="button button--tamaya button--border-thick" data-text="Open">
+                        <span>Начать тур по сайту</span></button>
+                </div>
+                <ul class="cd-tour-wrapper">
+                    <li class="cd-single-step">
+                        <span>Шаг 1</span>
+                        <div class="cd-more-info right">
+                            <h2>Header</h2>
+                            <p>При скроле картинка плавно опускается вниз, когда текст движется вверх и изчезает</p>
+                            <img src="img/step-1.png" alt="step 1">
+                        </div>
+                    </li>
+                    <li class="cd-single-step">
+                        <span>Шаг 2</span>
+                        <div class="cd-more-info right">
+                            <h2>Title</h2>
+                            <p>При загрузке страницы "the resume", каждой букве задана скорость и положение.</p>
+                            <img src="img/step-1.png" alt="step 1">
+                        </div>
+                    </li>
+                    <!-- .cd-single-step -->
+                    <li class="cd-single-step">
+                        <span>Шаг 3</span>
+                        <div class="cd-more-info right">
+                            <h2>Nav</h2>
+                            <p>Отслеживание viewport - переключает ссылки в зависимости на каком месте находится пользователь. При переключении - плавный скрол</p>
+                            <img src="img/step-2.png" alt="step 2">
+                        </div>
+                    </li>
+                    <!-- .cd-single-step -->
+                    <li class="cd-single-step">
+                        <span>Шаг 4</span>
+                        <div class="cd-more-info right">
+                            <h2>&lt;h2&gt;</h2>
+                            <p>При наведении на блоки - css начинает анимацию и jquery завершает</p>
+                            <img src="img/step-3.png" alt="step 3">
+                        </div>
+                    </li>
+                    <li class="cd-single-step">
+                        <span>Шаг 5</span>
+                        <div class="cd-more-info right">
+                            <h2>Deep <br> background</h2>
+                            <p>При скроле фон движется медленее остальных элементов создавая parallax-еффект</p>
+                            <img src="img/step-3.png" alt="step 3">
+                        </div>
+                    </li>
+                    <li class="cd-single-step">
+                        <span>Шаг 6</span>
+                        <div class="cd-more-info left">
+                            <h2>Skills</h2>
+                            <p>js двигает ползунки моих навыков и отображает их уровень</p>
+                            <img src="img/step-3.png" alt="step 3">
+                        </div>
+                    </li>
+                    <li class="cd-single-step">
+                        <span>Шаг 7</span>
+                        <div class="cd-more-info left">
+                            <h2>Site <br> tour</h2>
+                            <p>Переключение елементов списка, навигация и стили генерятся JQuery</p>
+                            <img src="img/step-3.png" alt="step 3">
+                        </div>
+                    </li>
+                    <li class="cd-single-step">
+                        <span>Шаг 8</span>
+                        <div class="cd-more-info top">
+                            <h2>Footer</h2>
+                            <p>Опустите вниз, чтобы увидеть еффект.
+                                <br>С помощью css наложения слоев и z-index появляется еффект 'шторки'.
+                            </p>
+                            <img src="img/step-3.png" alt="step 3">
+                        </div>
+                    </li>
+                    <li class="cd-single-step">
+                        <span>Шаг 9</span>
+                        <div class="cd-more-info top">
+                            <h2>Copy <br>button</h2>
+                            <p>Один клик и вы легко скопируете адрес моей почты для связи.
+                                <br>Надеюсь вам все понравилось.
+                                <br> Спасибо!</p>
+                            <img src="img/step-3.png" alt="step 3">
+                        </div>
+                    </li>
+                    <!-- .cd-single-step -->
+                </ul>
+                <!-- .cd-tour-wrapper -->
+                <div class="cd-app-screen"></div>
+                <div class="cd-cover-layer"></div>
             </div>
         </div>
     </div>
@@ -425,15 +433,18 @@
                     <img id="img-contact" src="img/tel.png" alt="tel"><span>+38-093-015-19-19</span>
                 </div>
                 <div class="mail">
-                    <img src="img/mail.png" alt="mail">
-                    <a class="js-emaillink" href="https://mail.google.com">nativecase@gmail.com</a>
-                    <!-- <button class="js-emailcopybtn">Скопировать</button> -->
-                    <p class="perspective">
-                        <button class="js-emailcopybtn btn btn-8 btn-8g">COPY &#9113;</button>
-                    </p>
-                    <p class="perspective" style="display: none;">
-                        <button class="btn btn-8 btn-8g">Копировать</button>
-                    </p>
+                    <article>
+                        <img src="img/mail.png" alt="mail">
+                        <a class="js-emaillink" href="https://mail.google.com">nativecase@gmail.com</a>
+                    </article>
+                    <div class="but-wrap">
+                        <p class="perspective">
+                            <button class="js-emailcopybtn btn btn-8 btn-8g">COPY &#9113;</button>
+                        </p>
+                        <p class="perspective" style="display: none;">
+                            <button class="btn btn-8 btn-8g"></button>
+                        </p>
+                    </div>
                 </div>
                 <div class="skype hidden-xs hidden-md ">
                     <img src="img/skype.png " alt="skype "><span>alexquery</span>

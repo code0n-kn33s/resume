@@ -209,6 +209,7 @@
 
 .cd-single-step.is-selected .cd-more-info {
     opacity: 1;
+    height: auto;
 }
 
 @-webkit-keyframes cd-pulse {
@@ -316,7 +317,6 @@
     /* step count e.g. 1 of 3*/
     float: left;
     padding-top: 10px;
-    font-family: lato;
 }
 
 .cd-single-step .cd-more-info {
@@ -330,7 +330,6 @@
     -moz-transition: opacity 0.4s;
     transition: opacity 0.4s;
     border-color: #fefffb;
-    font-family: lato;
 }
 
 .cd-single-step .cd-more-info p {
@@ -494,13 +493,11 @@
     transition: opacity 0.4s 0s, visibility 0s 0s;
 }
 
-@media only screen and (min-width: 1100px) {
-    .cd-cover-layer.is-visible {
-        opacity: 0;
-        -webkit-animation: cd-fade-in 2.1s;
-        -moz-animation: cd-fade-in 2.1s;
-        animation: cd-fade-in 2.1s;
-    }
+.cd-cover-layer.is-visible {
+    opacity: 0;
+    -webkit-animation: cd-fade-in 2.1s;
+    -moz-animation: cd-fade-in 2.1s;
+    animation: cd-fade-in 2.1s;
 }
 
 @-webkit-keyframes cd-fade-in {

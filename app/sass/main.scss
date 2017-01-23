@@ -1,5 +1,12 @@
+// colors
 $orange: #fed200;
-$blue: #006c90;
+$blue: #7986CB;
+$c6: #C5C6C8;
+$c5: #7986cb;
+$c4: #8692d0;
+$c3: #939ed5;
+$c2: #a1aada;
+$c1: #aeb6df;
 @import 'modules';
 @import 'fonts';
 @import 'tour';
@@ -538,7 +545,6 @@ hr {
     height: 70px;
     margin-left: 13%;
     padding: 10px;
-    color: $blue;
     border-top: 1px solid $blue;
     border-bottom: 1px solid $blue;
     span {
@@ -666,8 +672,11 @@ footer {
     display: inherit;
     width: inherit;
     height: 140px;
-    padding: 31px 0 31px 120px;
-    background: url(../img/bg-footer.png);
+    padding: 31px 0 31px 80px;
+    background: radial-gradient(148% 88% at top right, transparent 68%, $c1 69%, $c1 74%, $c6 75%, $c6 77%, $c2 78%, $c2 81%, #C6C7C9 82%, #C6C7C9 85%, $c3 86%, $c3 90%, #C6C7C9 91%, #C6C7C9 95%, $c4 96%, $c4 103%, #C6C7C9 104%, #C6C7C9 109%, $c5 110%, $c5 117%);
+    // background: radial-gradient(151% 88% at top right, transparent 68%, #EDD55E 69%, #D7D28B 69%, #C3DA7B 80%, #CBE27E 90%, #9EC4D3 100%, #9895EC 110%);
+    // background: radial-gradient(146% 105% at top right, transparent 68%, #6e8efb 60%, #a777e3 80%, #175E8F 80%, #9EC4D3 100%);
+    // background: radial-gradient(146% 105% at top right, transparent 68%, #6e8efb 67%, #a777e3 80%, #175E8F 80%, #266C90 100%);
 }
 
 .wrap-title {
@@ -676,14 +685,13 @@ footer {
 }
 
 .contact {
-    display: inherit;
     div {
         font-family: lato;
         font-weight: bold;
         float: left;
         height: 70px;
-        margin-left: 2%;
-        padding: 15px 15px 0 0;
+        margin-left: 3%;
+        padding: 12px 15px 0 0;
         text-align: left;
         color: #454141;
         background-color: rgba(254, 210, 0, .8);
@@ -696,14 +704,18 @@ footer {
 }
 
 .mail {
-    padding: 0px 0 0 0 !important;
-    margin: 0;
+    padding: 0 !important;
+    float: left;
+    article {
+        display: inline-block;
+        float: left;
+        padding: 12px 15px 0 0;
+    }
 }
 
-.but-copy {
-    position: absolute;
-    height: 30px;
-    width: 100px;
-    margin-bottom: 2%;
-    margin-left: 10%;
+.but-wrap {
+    display: inline-block;
+    padding: 0 !important;
+    margin: 0 !important;
+    float: right;
 }
