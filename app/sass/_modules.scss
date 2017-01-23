@@ -50,7 +50,6 @@ body {
     left: 10px;
     font-size: 13px;
     text-transform: uppercase;
-    color: #235287 !important;
 }
 
 .nav-tabs {
@@ -84,12 +83,12 @@ body {
 
 .navbar .menu__link:hover,
 .navbar .menu__link:focus {
-    color: #929292;
+    color: #006C90;
     background: none;
 }
 
 .navbar .active .menu__link {
-    color: $blue;
+    color: #006C90;
 }
 
 .navbar .menu__link::before,
@@ -672,6 +671,40 @@ div.module2.parallax-2 {
     transform: scale3d(1, 1, 1);
 }
 
-.cd-nugget-info {
-    margin-left: 40.5%;
+//hover links
+.link-hover {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: aq;
+    color: #23527E;
+    padding: 2px 0;
+}
+
+.link-hover::before {
+    max-width: 0;
+    padding: 2px 0;
+    border-top: 1px dashed #B7CF7D;
+    border-bottom: 1px dashed #B7CF7D;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    content: attr(data-text);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    text-shadow: none;
+}
+
+.link-hover:hover::before,
+.link-hover:focus::before {
+    max-width: 100%;
+    outline: none;
+    text-shadow: none;
 }
