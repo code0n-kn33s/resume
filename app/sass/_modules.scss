@@ -177,7 +177,7 @@ body {
     }
 }
 
-@media (max-width: 1260px) and (min-width: 1200px) {
+@media (max-width: 1260px) and (min-width: 1203px) {
     /* для разрешения экрана от 470 до 930 пикселей */
     .wrap-title {
         display: none;
@@ -197,15 +197,27 @@ body {
     }
 }
 
-@media (max-width: 793px) {
-    .skipe {
+@media (max-width: 1350px) {
+    .skype {
         display: none;
     }
 }
 
+@media (max-width: 1274px) {
+    .cd-nugget-info {
+        display: none;
+        ;
+    }
+}
+
+// @media (max-width: 1350px) {
+//     .git-foot {
+//         display: none;
+//     }
+// }
 //parallax bg
 .wrap-carousel {
-    background: url(../img/bg-1-1.png) no-repeat;
+    background: url(../img/bg-1-1-min.png) no-repeat;
 }
 
 .module {
@@ -218,7 +230,7 @@ body {
 }
 
 div.module.parallax-1 {
-    background: url(../img/bg-2-1.png) no-repeat;
+    background: url(../img/bg-2-1-min.png) no-repeat;
 }
 
 .module2 {
@@ -231,7 +243,7 @@ div.module.parallax-1 {
 }
 
 div.module2.parallax-2 {
-    background: url(../img/bg-2-2.png) no-repeat;
+    background: url(../img/bg-2-2-min.png) no-repeat;
 }
 
 // copy button

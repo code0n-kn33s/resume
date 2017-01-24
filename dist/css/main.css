@@ -152,7 +152,7 @@ body {
   .contact {
     width: 100%; } }
 
-@media (max-width: 1260px) and (min-width: 1200px) {
+@media (max-width: 1260px) and (min-width: 1203px) {
   /* для разрешения экрана от 470 до 930 пикселей */
   .wrap-title {
     display: none; }
@@ -166,12 +166,16 @@ body {
   .skills {
     margin-left: 10px; } }
 
-@media (max-width: 793px) {
-  .skipe {
+@media (max-width: 1350px) {
+  .skype {
+    display: none; } }
+
+@media (max-width: 1274px) {
+  .cd-nugget-info {
     display: none; } }
 
 .wrap-carousel {
-  background: url(../img/bg-1-1.png) no-repeat; }
+  background: url(../img/bg-1-1-min.png) no-repeat; }
 
 .module {
   margin-top: -70px;
@@ -182,7 +186,7 @@ body {
   z-index: -1; }
 
 div.module.parallax-1 {
-  background: url(../img/bg-2-1.png) no-repeat; }
+  background: url(../img/bg-2-1-min.png) no-repeat; }
 
 .module2 {
   margin-top: -80px;
@@ -193,7 +197,7 @@ div.module.parallax-1 {
   z-index: -1; }
 
 div.module2.parallax-2 {
-  background: url(../img/bg-2-2.png) no-repeat; }
+  background: url(../img/bg-2-2-min.png) no-repeat; }
 
 .btn {
   height: 70px;
@@ -591,17 +595,17 @@ div.module2.parallax-2 {
 @font-face {
   font-family: bebasneue;
   src: url(../fonts/BebasNeue-Regular.ttf);
-  font-weight: normal 400; }
+  font-weight: 400; }
 
 @font-face {
   font-family: bebasneue;
   src: url(../fonts/BebasNeue-Bold.ttf);
-  font-weight: bold 700; }
+  font-weight: 700; }
 
 @font-face {
   font-family: bebasneue;
   src: url(../fonts/BebasNeue-Light.ttf);
-  font-weight: light 300; }
+  font-weight: 300; }
 
 @font-face {
   font-family: fontawesome;
@@ -610,41 +614,8 @@ div.module2.parallax-2 {
 
 @font-face {
   font-family: lato;
-  src: url(../fonts/lato-bold.ttf);
-  font-weight: bold 700; }
-
-@font-face {
-  font-family: lato;
-  src: url(../fonts/lato-bolditalic.ttf);
-  font-weight: bold 700;
-  font-style: italic; }
-
-@font-face {
-  font-family: lato;
-  src: url(../fonts/lato-regular.ttf);
-  font-weight: normal 400; }
-
-@font-face {
-  font-family: lato;
   src: url(../fonts/lato-black.ttf);
   font-weight: 900; }
-
-@font-face {
-  font-family: lato;
-  src: url(../fonts/lato-blackitalic.ttf);
-  font-weight: 900;
-  font-style: italic; }
-
-@font-face {
-  font-family: lato;
-  src: url(../fonts/lato-semibold.ttf);
-  font-weight: 600; }
-
-@font-face {
-  font-family: lato;
-  src: url(../fonts/lato-semibolditalic.ttf);
-  font-weight: 600;
-  font-style: italic; }
 
 @font-face {
   font-family: aleks;
@@ -655,10 +626,6 @@ div.module2.parallax-2 {
   font-family: aq;
   src: url(../fonts/aquarion.ttf);
   font-weight: 400; }
-
-@font-face {
-  font-family: fantom;
-  src: url(../fonts/fantom.ttf); }
 
 .cd-tour-wrapper {
   position: fixed;
@@ -795,16 +762,16 @@ div.module2.parallax-2 {
   right: 28%; }
 
 .cd-single-step:nth-of-type(7) {
-  bottom: 10%;
-  left: 68%; }
-
-.cd-single-step:nth-of-type(8) {
   bottom: 7%;
   left: 25%; }
 
+.cd-single-step:nth-of-type(8) {
+  bottom: 11%;
+  left: 54.5%; }
+
 .cd-single-step:nth-of-type(9) {
-  bottom: 5%;
-  left: 57%; }
+  bottom: 3%;
+  left: 57.5%; }
 
 .cd-single-step > span,
 .cd-single-step::after {
@@ -1103,9 +1070,10 @@ hr {
 
 .name {
   font-family: bebasneue;
-  text-align: center; }
+  text-align: center;
+  font-weight: 300; }
   .name h1 {
-    font-weight: bold;
+    font-weight: 300;
     margin: 0 0 0 0;
     padding: 5px 0 0 0;
     -webkit-animation-name: bounce;
@@ -1115,7 +1083,9 @@ hr {
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
     color: black;
-    text-shadow: 1px 1px 1px white; }
+    text-shadow: 1px 1px 1px white;
+    width: 250px;
+    margin: auto; }
 
 .lines {
   font-size: 16px;
@@ -1123,7 +1093,7 @@ hr {
   position: relative;
   z-index: 10;
   display: inline-block;
-  width: 110px;
+  width: 140px;
   height: 25px;
   border-top: 2px solid #fed200;
   border-bottom: 2px solid #fed200;
@@ -1407,7 +1377,7 @@ hr {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 50%;
-  margin: 0 0 10px 0;
+  margin: 0 0 35px 0;
   padding: 0; }
 
 /*EXPERIENCE*/
@@ -1605,7 +1575,8 @@ footer {
   display: inherit;
   width: inherit;
   height: 140px;
-  padding: 31px 0 31px 80px;
+  padding: 31px 0 31px 0px;
+  text-shadow: 1px 1px 0 #7986CB;
   background: -webkit-radial-gradient(148% 88% at top right, transparent 68%, #aeb6df 69%, #aeb6df 74%, #C5C6C8 75%, #C5C6C8 77%, #a1aada 78%, #a1aada 81%, #C6C7C9 82%, #C6C7C9 85%, #939ed5 86%, #939ed5 90%, #C6C7C9 91%, #C6C7C9 95%, #8692d0 96%, #8692d0 103%, #C6C7C9 104%, #C6C7C9 109%, #7986cb 110%, #7986cb 117%);
   background: radial-gradient(148% 88% at top right, transparent 68%, #aeb6df 69%, #aeb6df 74%, #C5C6C8 75%, #C5C6C8 77%, #a1aada 78%, #a1aada 81%, #C6C7C9 82%, #C6C7C9 85%, #939ed5 86%, #939ed5 90%, #C6C7C9 91%, #C6C7C9 95%, #8692d0 96%, #8692d0 103%, #C6C7C9 104%, #C6C7C9 109%, #7986cb 110%, #7986cb 117%); }
 
@@ -1614,19 +1585,28 @@ footer {
   float: left; }
 
 .contact div {
-  font-family: lato;
-  font-weight: bold;
+  font-family: bebasneue;
+  font-weight: 700;
   float: left;
   height: 70px;
   margin-left: 3%;
   padding: 12px 15px 0 0;
   text-align: left;
-  color: #454141;
+  color: #C4C5C7;
+  font-size: 20px;
+  color: white;
+  letter-spacing: 1px;
   background-color: rgba(254, 210, 0, 0.8); }
   .contact div img {
     width: 45px;
     height: 45px;
     margin: 0 10px 0 -15px; }
+  .contact div a {
+    font-family: bebasneue;
+    font-weight: 700;
+    color: white;
+    font-size: 20px;
+    text-shadow: 1px 1px 0 #7986CB; }
 
 .mail {
   padding: 0 !important;

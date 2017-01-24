@@ -37,8 +37,9 @@ hr {
 .name {
     font-family: bebasneue;
     text-align: center;
+    font-weight: 300;
     h1 {
-        font-weight: bold;
+        font-weight: 300;
         margin: 0 0 0 0;
         padding: 5px 0 0 0;
         -webkit-animation-name: bounce;
@@ -49,6 +50,8 @@ hr {
         animation-timing-function: ease-out;
         color: black;
         text-shadow: 1px 1px 1px white;
+        width: 250px;
+        margin: auto;
     }
 }
 
@@ -58,7 +61,7 @@ hr {
     position: relative;
     z-index: 10;
     display: inline-block;
-    width: 110px;
+    width: 140px;
     height: 25px;
     border-top: 2px solid $orange;
     border-bottom: 2px solid $orange;
@@ -427,7 +430,7 @@ hr {
     float: right;
     box-sizing: border-box;
     width: 50%;
-    margin: 0 0 10px 0;
+    margin: 0 0 35px 0;
     padding: 0;
 }
 
@@ -676,7 +679,8 @@ footer {
     display: inherit;
     width: inherit;
     height: 140px;
-    padding: 31px 0 31px 80px;
+    padding: 31px 0 31px 0px;
+    text-shadow: 1px 1px 0 #7986CB;
     background: radial-gradient(148% 88% at top right, transparent 68%, $c1 69%, $c1 74%, $c6 75%, $c6 77%, $c2 78%, $c2 81%, #C6C7C9 82%, #C6C7C9 85%, $c3 86%, $c3 90%, #C6C7C9 91%, #C6C7C9 95%, $c4 96%, $c4 103%, #C6C7C9 104%, #C6C7C9 109%, $c5 110%, $c5 117%);
     // background: radial-gradient(151% 88% at top right, transparent 68%, #EDD55E 69%, #D7D28B 69%, #C3DA7B 80%, #CBE27E 90%, #9EC4D3 100%, #9895EC 110%);
     // background: radial-gradient(146% 105% at top right, transparent 68%, #6e8efb 60%, #a777e3 80%, #175E8F 80%, #9EC4D3 100%);
@@ -690,19 +694,29 @@ footer {
 
 .contact {
     div {
-        font-family: lato;
-        font-weight: bold;
+        font-family: bebasneue;
+        font-weight: 700;
         float: left;
         height: 70px;
         margin-left: 3%;
         padding: 12px 15px 0 0;
         text-align: left;
-        color: #454141;
+        color: #C4C5C7;
+        font-size: 20px;
+        color: white;
+        letter-spacing: 1px;
         background-color: rgba(254, 210, 0, .8);
         img {
             width: 45px;
             height: 45px;
             margin: 0 10px 0 -15px;
+        }
+        a {
+            font-family: bebasneue;
+            font-weight: 700;
+            color: white;
+            font-size: 20px;
+            text-shadow: 1px 1px 0 #7986CB;
         }
     }
 }
